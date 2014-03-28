@@ -1,0 +1,4395 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 11">
+<link rel=File-List href="Chapter%205.files/filelist.xml">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+x\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<style id="第二章_12751_Styles">
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+.font512751
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:宋体;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;}
+.font612751
+	{color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.font712751
+	{color:#FF6600;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.font812751
+	{color:blue;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.font912751
+	{color:red;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.font1012751
+	{color:#993300;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.font1112751
+	{color:white;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.font1212751
+	{color:#FF6600;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.xl2412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl2512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl2612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl2712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl2812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl2912751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:"\@";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl3012751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl3112751
+	{padding:0px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl3212751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl3312751
+	{padding:0px;
+	mso-ignore:padding;
+	color:lime;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl3412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:blue;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl3512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl3612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl3712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;
+	mso-text-control:shrinktofit;}
+.xl3812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:red;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl3912751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;
+	mso-text-control:shrinktofit;}
+.xl4012751
+	{padding:0px;
+	mso-ignore:padding;
+	color:#993300;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;
+	mso-text-control:shrinktofit;}
+.xl4112751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl4212751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl4312751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border:.5pt solid #993300;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl4412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl4512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl4612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl4712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl4812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl4912751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl5012751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl5112751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl5212751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl5312751
+	{padding:0px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl5412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl5512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl5612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl5712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl5812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;
+	mso-text-control:shrinktofit;}
+.xl5912751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl6012751
+	{padding:0px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl6112751
+	{padding:0px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl6212751
+	{padding:0px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl6312751
+	{padding:0px;
+	mso-ignore:padding;
+	color:white;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#202020;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl6412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl6512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl6612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl6712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl6812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:#993300;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;
+	mso-text-control:shrinktofit;}
+.xl6912751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7012751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7112751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7212751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7312751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl7612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl7912751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8012751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8112751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8212751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8312751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl8612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	background:#FEE2D2;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl8712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#FEE2D2;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl8812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	background:#D9FFD9;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl8912751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#D9FFD9;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl9012751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	background:#D9FFD9;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl9112751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#D9FFD9;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl9212751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	background:#FEE2D2;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl9312751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#FEE2D2;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl9412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	background:#FEE2D2;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl9512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#FEE2D2;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl9612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl9712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl9812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl9912751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl10012751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	background:#D9FFD9;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl10112751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	background:#D9FFD9;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl10212751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl10312751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl10412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl10512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl10612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:#FF6600;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl10712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:#FF6600;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl10812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:red;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl10912751
+	{padding:0px;
+	mso-ignore:padding;
+	color:red;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl11012751
+	{padding:0px;
+	mso-ignore:padding;
+	color:#FF6600;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl11112751
+	{padding:0px;
+	mso-ignore:padding;
+	color:#FF6600;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl11212751
+	{padding:0px;
+	mso-ignore:padding;
+	color:#FF6600;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl11312751
+	{padding:0px;
+	mso-ignore:padding;
+	color:#FF6600;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl11412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl11512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl11612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl11712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl11812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl11912751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl12012751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl12112751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl12212751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#D9FFD9;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl12312751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl12412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:#FF6600;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl12512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:top;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl12612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:top;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl12712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:top;
+	border-top:.5pt solid #993300;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl12812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:top;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl12912751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:top;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl13012751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:top;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl13112751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:top;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl13212751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#D9FFD9;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl13312751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#FEE2D2;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl13412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl13512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	background:#D9FFD9;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl13612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:top;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl13712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:top;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl13812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:top;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:normal;}
+.xl13912751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl14012751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl14112751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl14212751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#FEE2D2;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl14312751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	background:#FEE2D2;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl14412751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl14512751
+	{padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:left;
+	vertical-align:middle;
+	border-top:.5pt solid #993300;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	background:#FFFFD1;
+	mso-pattern:auto none;
+	white-space:nowrap;}
+.xl14612751
+	{padding:0px;
+	mso-ignore:padding;
+	color:#FF6600;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:.5pt solid #993300;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl14712751
+	{padding:0px;
+	mso-ignore:padding;
+	color:#FF6600;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.xl14812751
+	{padding:0px;
+	mso-ignore:padding;
+	color:red;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid #993300;
+	border-bottom:none;
+	border-left:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+ruby
+	{ruby-align:left;}
+rt
+	{color:windowtext;
+	font-size:9.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:宋体;
+	mso-generic-font-family:auto;
+	mso-font-charset:134;
+	mso-char-type:none;}
+.font6127511 {color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.font8127511 {color:blue;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.xl106127511 {padding:0px;
+	mso-ignore:padding;
+	color:#FF6600;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.font6127512 {color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.xl110127511 {padding:0px;
+	mso-ignore:padding;
+	color:#FF6600;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.font6127513 {color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.font8127512 {color:blue;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.xl110127512 {padding:0px;
+	mso-ignore:padding;
+	color:#FF6600;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.STYLE1 {padding: 0px; mso-ignore: padding; color: #FF0000; font-size: 12.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: 微软雅黑, sans-serif; mso-font-charset: 134; mso-number-format: General; text-align: right; vertical-align: middle; border-top: none; border-right: none; border-bottom: .5pt solid #993300; border-left: .5pt solid #993300; mso-background-source: auto; mso-pattern: auto; white-space: nowrap; }
+.STYLE2 {padding: 0px; mso-ignore: padding; color: #FF0000; font-size: 12.0pt; font-weight: 400; font-style: normal; text-decoration: none; font-family: 微软雅黑, sans-serif; mso-font-charset: 134; mso-number-format: General; text-align: right; vertical-align: middle; border-top: none; border-right: none; border-bottom: .5pt solid #993300; border-left: .5pt solid #993300; mso-background-source: auto; mso-pattern: auto; white-space: nowrap; }
+.STYLE4 {color: #FF0000}
+.xl82127511 {padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.font6127514 {color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.font8127513 {color:blue;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;}
+.xl82127512 {padding:0px;
+	mso-ignore:padding;
+	color:windowtext;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:微软雅黑, sans-serif;
+	mso-font-charset:134;
+	mso-number-format:General;
+	text-align:right;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid #993300;
+	border-left:.5pt solid #993300;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	white-space:nowrap;}
+.STYLE5 {color: #FF3300}
+.STYLE6 {color: #000000}
+.STYLE7 {color: #0000FF}
+-->
+</style>
+</head>
+
+<body>
+<!--[if !excel]>　　<![endif]-->
+<!--下列信息由 Microsoft Office Excel 的“发布为网页”向导生成。-->
+<!--如果同一条目从 Excel 中重新发布，则所有位于 DIV 标记之间的信息均将被替换。-->
+<!----------------------------->
+<!--“从 EXCEL 发布网页”向导开始-->
+<!----------------------------->
+
+<div id="第二章_12751" align=center x:publishsource="Excel">
+
+<table x:str border=0 cellpadding=0 cellspacing=0 width=920 class=xl2412751
+ style='border-collapse:collapse;table-layout:fixed;width:691pt'>
+ <col class=xl2412751 width=95 style='mso-width-source:userset;mso-width-alt:
+ 3040;width:71pt'>
+ <col class=xl2412751 width=165 span=5 style='mso-width-source:userset;
+ mso-width-alt:5280;width:124pt'>
+ <tr height=24 style='height:18.0pt'>
+  <td height=24 class=xl4312751 width=95 style='height:18.0pt;width:71pt'>　</td>
+  <td colspan=5 class=xl11212751 width=825 style='border-right:.5pt solid #993300;
+  border-left:none;width:620pt'>Chapter Ⅴ 幻想学院的双恋物语</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'><span
+  style='mso-spacerun:yes'>&nbsp;</span>主线流程：</td>
+  <td colspan=5 class=xl7312751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>1）妹红辉夜被传送不知名的城镇（？），被突然出现的<font
+  class="font912751">暴走女学生</font><font class="font612751">袭击，小野塚小町出现，压制暴走少女。</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none'>选项<font class="font812751">[巧妙搪塞]</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7312751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>2）忽悠小町一番后来到女生宿舍，休息到天亮。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none'>选项<font class="font812751">[更高层的人]</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7312751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>3）起床后，对学园都市调查一番后前往食堂就餐。</td>
+ </tr>
+ 
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="调查正门左侧的门牌 +1 ">调查正门左侧的门牌 +1<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="捡起正门前的玻璃碎片（需在4.5与眼镜店店主对话） +1 ">捡起正门前的玻璃碎片（需在4.5与眼镜店店主对话）
+  +1<span style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="进入食堂前与所有NPC谈话（共8组） +2 ">进入食堂前与所有NPC谈话（共8组） +2<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>4）两人在食堂里发现了学院的异常后，离开食堂。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7312751 style='border-right:.5pt solid #993300;
+  border-left:none'><span style='mso-spacerun:yes'>&nbsp;</span>5）刚出食堂就与<font
+  class="font912751">上白泽慧音</font><font class="font612751">撞个正着，赶来的稗田阿求为两人解了围。</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+   <td height=23 class=xl4512751 style='height:17.25pt'>&nbsp;</td>
+   <td colspan=5 class=xl10612751 style='border-right:.5pt solid #993300;
+  border-left:none'><span class="xl106127511" style="border-right:.5pt solid #993300;
+  border-left:none">★<font class="font6127511"> 选项</font><font class="font8127511">[阻止辉夜]</font><font
+  class="font6127511"> +2<span style='mso-spacerun:yes'>&nbsp;</span></font></span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10612751 style='border-right:.5pt solid #993300;
+  border-left:none'>（阻止两人+1阻止慧音+0）</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+   <td height=23 class=xl4512751 style='height:17.25pt'>&nbsp;</td>
+   <td colspan=5 class=xl11012751 style='border-right:.5pt solid #993300;
+  border-left:none'><span class="xl110127511" style="border-right:.5pt solid #993300;
+  border-left:none">★<font class="font6127512"> 战斗中不打败慧音，也不被慧音打败，支持15回合等待战斗中断
+  +2<span style='mso-spacerun:yes'>&nbsp;</span></font></span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl11012751 style='border-right:.5pt solid #993300;
+  border-left:none'>（击败慧音0评价，被慧音击败-1评价）</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7312751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>6）两人和阿求进入食堂谈话，获取学园都市的相关情报，得到『执行者徽章』。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none'>选项<font class="font812751">[确实有点奇怪]</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none'>选项<font class="font812751">[质疑辉夜的说法]</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7312751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>7）前往社团大楼2F的学生会执行部见四季映姬，上白泽慧音入队。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none'>选项<font class="font812751">[办不到的]</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+   <td height=23 class=xl4512751 style='height:17.25pt'>&nbsp;</td>
+   <td colspan=5 class=xl11012751 style='border-right:.5pt solid #993300;
+  border-left:none'>★ <span class="STYLE6">选项</span><span class="STYLE7">[上白泽慧音]</span> <span class="STYLE6">+1</span><span class="xl110127512" style="border-right:.5pt solid #993300;
+  border-left:none"><font
+  class="font6127513"><span style='mso-spacerun:yes'>&nbsp;</span></font></span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=STYLE1 style='border-right:.5pt solid #993300;
+  border-left:none'>此时评价14/62</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7312751 style='border-right:.5pt solid #993300;
+  border-left:none'><span style='mso-spacerun:yes'>&nbsp;</span>8）巡逻一番后前往蛆虫之穴。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="回到社团大楼2F与执行部门外的小町对话可以接到任务调查七个不可思议 +1 ">回到社团大楼2F与执行部门外的小町对话可以接到任务调查七个不可思议
+  +1<span style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="前往每个不可思议的发生地点触发前置任务 ">分别前往<strong>校长室</strong>，<strong>音乐室</strong>，<strong>理科室</strong>（需调查人体模型），<strong>湖中心</strong>，触发不可思议调查任务的前置剧情</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="在超市购买『口琴』后，前往女生宿舍天台，完成任务『不可思议：天台传音』 +1 ">在超市购买『口琴』后，前往女生宿舍天台，完成任务『不可思议：天台传音』
+  +1<span style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="持有『报纸』（若没有可去文艺部拿取）来到教学楼1F的女厕，完成任务『不可思议：厕所低吟』 +1 ">持有『报纸』（若没有可去文艺部拿取）来到教学楼1F的女厕，完成任务『不可思议：厕所低吟』
+  +1<span style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none'>前往大礼堂，得知有演员偷懒，来到1206寝室发现学生<font class="font912751">桂世界</font><font
+  class="font612751">暴走<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none'>将其杀死后回到大礼堂，接下竹取物语的表演任务，并选择<font class="font812751">[让慧音来扮演]</font><font
+  class="font612751"> +2<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+   <td height=23 class=xl4512751 style='height:17.25pt'>&nbsp;</td>
+   <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="在校园门外大街，往东边走一次调查EMU大楼 +1 ">在校园门外大街，往东边走一次调查EMU大楼 +1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="在校园门外大街，往东边走一次调查EMU大楼 +1 "><span style='mso-spacerun:yes'><span class="STYLE2" style="border-right:.5pt solid #993300;
+  border-left:none">此时评价20/62</span>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>9）来到蛆虫之穴，击败入口的数名<font class="font912751">堕渊者</font><font
+  class="font612751">与</font><font class="font912751">木下樱桃</font><font
+  class="font612751">，开始清理蛆虫之穴。</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7312751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>10）清理完成后来到蛆虫之穴底层，击破<font
+  class="font912751">姬川沙耶</font><font class="font612751">，沙耶暴走。</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10612751 style='border-right:.5pt solid #993300;
+  border-left:none'><font class="font612751"> <span class="STYLE5">★</span>击杀全部29组堕渊者 +2<span
+  style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5012751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none'>击杀沙耶第二形态<font class="font912751">『憎恶集合体』</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='page-break-before:always;height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td align=left valign=top><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+   coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+   filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="Picture_x0020_22" o:spid="_x0000_s12300" type="#_x0000_t75"
+   alt="蛆虫之穴" style='position:absolute;margin-left:6pt;margin-top:1.5pt;
+   width:547.5pt;height:431.25pt;z-index:1;visibility:visible'>
+   <v:imagedata src="Chapter%205.files/第二章_12751_image001.png" o:title="蛆虫之穴"/>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+   </x:ClientData>
+  </v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+  position:absolute;z-index:1;margin-left:8px;margin-top:2px;width:730px;
+  height:575px'><img width=730 height=575
+  src="Chapter%205.files/第二章_12751_image002.gif" alt=蛆虫之穴 v:shapes="Picture_x0020_22"></span><![endif]><span
+  style='mso-ignore:vglayout2'>
+  <table cellpadding=0 cellspacing=0>
+   <tr>
+    <td height=23 class=xl3012751 width=165 style='height:17.25pt;width:124pt'>　</td>
+   </tr>
+  </table>
+  </span></td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3812751>&#9642;<span style='mso-spacerun:yes'>&nbsp;&nbsp; </span><font
+  class="font1112751">堕渊者</font></td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 colspan=2 style='height:17.25pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>蛆虫之穴</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5112751 style='height:17.25pt'>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl3012751>　</td>
+  <td class=xl5212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5512751 style='height:17.25pt'>　</td>
+  <td class=xl5612751>　</td>
+  <td class=xl5612751>　</td>
+  <td class=xl5612751>　</td>
+  <td class=xl5612751>　</td>
+  <td class=xl5712751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>11）离开蛆虫之穴，返回学园都市。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7312751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>12）巡逻一番后返回学生会执行部报告。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="与学院正门的【女生】对话可以接受任务『失踪的小猫』 ">与学院正门的【女生】对话可以接受任务『失踪的小猫』<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="于男生宿舍门前可以找到小猫 ">于男生宿舍门前可以找到小猫<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="带着小猫来到教学楼音乐室，完成任务『不可思议：钢琴独奏』 +1 ">带着小猫来到教学楼音乐室，完成任务『不可思议：钢琴独奏』
+  +1<span style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="回到正门将小猫交还女生完成任务『失踪的小猫』 +1 ">回到正门将小猫交还女生完成任务『失踪的小猫』
+  +1<span style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="前往教学楼理科实验室，完成任务『不可思议：人体模型』 +1 ">前往教学楼理科实验室，完成任务『不可思议：人体模型』
+  +1<span style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="于礼堂后方自动售卖机前的女生对话，触发校长室前置任务 ">于礼堂后方自动售卖机前的女生对话，触发校长室前置剧情，<span class="STYLE4">此时评价26/62&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7312751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>13）回到执行部汇报工作后，回寝室休息到第二天学园祭。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none'>选项<font class="font812751">[要不要调查看看]</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none'>选项<font class="font812751">[不喝饮料]</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="选择[喝饮料]，则会在晚上被暗杀，直接结束本章 ">选择[喝饮料]，则会在晚上被暗杀，直接结束本章<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="（Dead Ending） ">（Dead Ending）<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="半夜出门前叫醒辉夜 +1 ">半夜出门前叫醒辉夜 +1<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none'>选项<font class="font812751">[忍耐算了]</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7312751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>14）学园祭开始，巡逻完毕后前往旧校舍。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="进入食堂，慧音给妹红买早餐 +1 ">进入食堂，慧音给妹红买早餐 +1<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="幽灵鬼屋游戏坚持1分钟以上 +1 ">幽灵鬼屋游戏坚持1分钟以上 +1<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10812751 style='border-right:.5pt solid #993300;
+  border-left:none'>学院武斗祭<font class="font612751">获得冠军，得到饰品</font><font
+  class="font1012751">『冠军奖章』</font><font class="font612751"> +1<span
+  style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10612751 style='border-right:.5pt solid #993300;
+  border-left:none'>★<font class="font612751"> 音乐教室内听慧音弹奏《少女的祈祷》 +1<span
+  style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="与湖边氧气瓶旁的男生对话，完成任务『不可思议：水怪怪谈』 +1 ">与湖边氧气瓶旁的男生对话，完成任务『不可思议：水怪怪谈』
+  +1<span style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="完成前五个不可思议任务后，来到校长室，完成『不可思议：校长案件』 +1 ">完成前五个不可思议任务后，来到校长室，完成『不可思议：校长案件』（校长室保险箱密码7777777）
+  +1<span style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="完成全六个不可思议任务后，来到图书馆与阿求对话，接受任务『不可思议：五个难题』 ">完成全六个不可思议任务后，来到图书馆与阿求对话，接受任务『不可思议：五个难题』<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="分别于女生宿舍天台、食堂、草壁迷宫、理科实验室、教学楼3F休息室获得『图书』 ">分别于女生宿舍天台、食堂、草壁迷宫、理科实验室、教学楼3F休息室获得『图书』<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10612751 style='border-right:.5pt solid #993300;
+  border-left:none'>★<font class="font612751"> 回到图书馆与阿求对话，获得饰品</font><font
+  class="font1012751">『圣书外典』</font><font class="font612751">，完成最后的不思议任务『不可思议：五个难题』
+  +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10612751 style='border-right:.5pt solid #993300;
+  border-left:none'>★ <font class="font612751">来到礼堂，与慧音一同上演舞台剧《竹取物语》（战斗中不能使用火焰系技能）
+  +3<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=24 style='height:18.0pt'>
+  <td height=24 class=xl4512751 style='height:18.0pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none'>来到后台左侧，与骚灵乐团见面（需搜集三章海报），接受任务『歌姬计划』<font class="font712751">（决定米斯蒂娅·萝蕾拉是否存活）<span
+  style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none'>选项<font class="font812751">[送给慧音]</font><font
+  class="font612751"> +2<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+   <td height=23 class=xl4512751 style='height:17.25pt'>&nbsp;</td>
+   <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="完美巡查学院后前往旧校舍 +4 "><p>建议完美巡查之后再接受这个任务</p>     </td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+   <td height=23 class=xl4512751 style='height:17.25pt'>&nbsp;</td>
+   <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="完美巡查学院后前往旧校舍 +4 "><p>完美巡查攻略：计算巡查点和巡查值，巡查点一共7点：男宿、女宿、食堂、超市、医院、教学楼、礼堂。</p>     </td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+   <td height=23 class=xl4512751 style='height:17.25pt'>&nbsp;</td>
+   <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="完美巡查学院后前往旧校舍 +4 ">7点全得到后就可以去旧校舍推进剧情了</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+   <td height=23 class=xl4512751 style='height:17.25pt'>&nbsp;</td>
+   <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="完美巡查学院后前往旧校舍 +4 ">巡查值一共13点：图书馆、社团大楼、一年一班、一年二班、二年一班（鬼屋游戏）、二年二班（武道会）</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+   <td height=23 class=xl4512751 style='height:17.25pt'>&nbsp;</td>
+   <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="完美巡查学院后前往旧校舍 +4 ">三年一班、三年二班、音乐教室、理科实验室、教学楼1F2F3F的3个休息室。巡查值为13，评价+4</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+   <td height=23 class=xl4512751 style='height:17.25pt'>&nbsp;</td>
+   <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="完美巡查学院后前往旧校舍 +4 ">完美巡查学院后前往旧校舍</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="完美巡查学院后前往旧校舍 +4 "><span
+  style='mso-spacerun:yes'><span class="STYLE4">此时评价46/62</span>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7912751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>15）进入旧校舍，来到顶层或者直接被杀死后，离开旧校舍。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>调查上锁的六芒星大门，选择<font class="font812751">[想想其他办法]</font><font
+  class="font612751">；通过教室中的镜子传送获得『血红色六芒星』</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>再次调查六芒星大门，选择<font class="font812751">[否]</font><font class="font612751">；来到厕所调查巫女娃娃</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>调查厕所墙壁的裂痕，获得『开刃的宝剑』；再次调查巫女娃娃，选择<font class="font812751">[否]</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>调查刚才打开的宝箱，进入杂物间，在空宝箱中换得『腐朽的御币』；再次调查巫女娃娃，选择<font class="font812751">[否]</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>回到杂物间，在最里面的宝箱中获得『精致的御币』；再次调查巫女娃娃，选择<font class="font812751">[退后一点继续等待]</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>获得『净化的六芒星』，再次来到六芒星大门，打开，进入2F</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>来到断路前，选择<font class="font812751">[先观察一下情况]</font><font
+  class="font612751">；在教室中找到黑猫尸体选择</font><font class="font812751">[仔细观察]</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>调查讲台前的粉笔灰，选择<font class="font812751">[插到猫尸的脖子上]</font><font
+  class="font612751">，通过断裂的通道，进入3F</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>通过铁球阵机关后，于拐角处穿过墙壁进入正确的门；从左上角的小路走到正确的通路</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>来到最后的机关室，调查移动的门来到旧校舍顶层（整个过程中不要踩上血迹损失玫瑰补）</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>在顶层教研室遇到暴走的<font class="font912751">米斯蒂娅·萝蕾拉</font><font
+  class="font612751">，将其制服</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>随后人形兵器<font class="font912751">因幡Z</font><font class="font612751">到来，对两人发动进攻</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5012751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl11012751 style='border-right:.5pt solid #993300;
+  border-left:none'>★<font class="font612751"> 击破因幡Z 完美完成旧校舍剧情 +5<span
+  style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='page-break-before:always;height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7912751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>16）镜头回到辉夜这边，回答问题，赢得辉夜姬比赛冠军。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none'>选项<font class="font812751">[蓬莱玉枝]</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>选项</font><font class="font812751">[藤原不比等]</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none'>选项<font class="font812751">[如实相告]</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7912751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>17）和铃仙一同来到EMU总裁室，与八意永琳见面。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none'>选项<font class="font812751">[丧失了曾经的记忆]</font><font
+  class="font612751">+1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7412751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>18）铃仙·优昙华院入队，前往数据分析区，进入灵能力试验场进行测试。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7912751 style='border-right:.5pt solid #993300;
+  border-left:none'><span style='mso-spacerun:yes'>&nbsp;</span>19）通过试验场，击败最后的<font
+  class="font912751">『优胜者GAS-A03』</font><font class="font612751">，并同</font><font
+  class="font912751">铃仙</font><font class="font612751">决斗，完成测试。</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8412751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="35回合内击破机器人 +1 ">35回合内击破机器人 +1<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="打败铃仙 +1 ">打败铃仙 +1<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7912751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>20）测试结束后，前往数据分析区，与<font
+  class="font912751">八意永琳</font><font class="font612751">交谈，发生战斗。</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="击败永琳 +2 ">击败永琳 +2<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl7912751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>21）学生会执行部，妹红开始与四季交涉，准备攻下两座信号塔。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+   <td height=23 class=xl4512751 style='height:17.25pt'>&nbsp;</td>
+   <td colspan=5 class=xl8212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span class="xl82127512" style="border-right:.5pt solid #993300;
+  border-left:none">选项<font class="font8127513">[没有能出示的证物]</font><font
+  class="font6127514"> +1</font></span></td>
+ </tr>
+ 
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td height=23 colspan="5" class=xl4512751 style='height:17.25pt'><span style='mso-spacerun:yes'>&nbsp;</span>22）剧情分支</td>
+  </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td height=23 colspan="5" class=xl4512751 style='height:17.25pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>A）完成竹取物语舞台剧任务，完美突破旧校舍击败因藩Z，<font
+  class="font1212751"><span class="STYLE6">并达成其他两个以上</span>★<span class="STYLE6">条件</span></font></td>
+  </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td height=23 colspan="5" class=xl4512751 style='height:17.25pt'><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>B）未达成以上全部条件，击败因藩z且最后一个选项选择了<span class="STYLE7">[没有能出示的证物]</span>取得了执行者的信任</td>
+  </tr>
+ <tr height=23 style='height:17.25pt'>
+   <td height=23 class=xl4512751 style='height:17.25pt'>&nbsp;</td>
+   <td height=23 colspan="5" class=xl4512751 style='height:17.25pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     C ) 未达成以上条件 </span></td>
+   </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10012751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>22A）得到执行者信任，慧音入队，全员合作进攻信号塔。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8812751 style='border-right:.5pt solid #993300;
+  border-left:none'>考验中击败<font class="font912751">四季</font><font
+  class="font612751">与</font><font class="font912751">小町</font><font
+  class="font612751"> +1<span style='mso-spacerun:yes'>&nbsp;</span></font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9012751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>23A）辉夜方面，和铃仙一同逃离EMU总部，与妹红汇合。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10012751 style='border-right:.5pt solid #993300;
+  border-left:none'><span style='mso-spacerun:yes'>&nbsp;</span>24A）在EMU出口处遭遇<font
+  class="font912751">守卫机器人</font><font class="font612751">的伏击，逐一击破。</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8812751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="击破全部机器人 +1 ">击破全部机器人 +1<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9012751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>25A）前往EMU旁的二号发射塔，一路冲向塔顶。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9012751 style='border-right:.5pt solid #993300;
+  border-left:none'><span style='mso-spacerun:yes'>&nbsp;</span>26A）塔顶遭到<font
+  class="font912751">村纱水蜜</font><font class="font612751">阻拦，将其击破后，慧音暴走，恢复记忆。</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl10012751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>27A）成功阻止死亡电波的发射，全员安全回归隙间之里。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8812751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="（Good Ending） ">（Good Ending）<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9612751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>22B）得到执行者信任，但是慧音未能归队，合作进攻信号塔。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9612751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>23B）辉夜方面，和铃仙一同逃离EMU总部，与妹红汇合。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9612751 style='border-right:.5pt solid #993300;
+  border-left:none'><span style='mso-spacerun:yes'>&nbsp;</span>24B）在EMU出口处遭遇<font
+  class="font912751">守卫机器人</font><font class="font612751">的伏击，逐一击破。</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9612751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>25B）前往旧校舍旁的一号发射塔，一路冲往塔顶。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9612751 style='border-right:.5pt solid #993300;
+  border-left:none'><span style='mso-spacerun:yes'>&nbsp;</span>26B）击破塔顶守备的<font
+  class="font912751">村纱水蜜</font><font class="font612751">，黑衣人出现，但是二号塔的四季与小町遭遇不明人士袭击，二号塔失守。</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9812751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>27B）死亡电波发射，学院都市毁灭，妹红辉夜回归隙间之里被消除记忆。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl13912751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="（Normal Ending） ">（Normal Ending）<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9412751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>20C）妹红方面，得知学院都市的总裁是八意永琳后，迅速前往EMU与辉夜汇合。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9412751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>21C）辉夜测试结束后，前往数据分析区，与<font
+  class="font912751">八意永琳</font><font class="font612751">交谈，发生战斗。</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9412751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>22C）得知死亡电波即将到来后辉夜与铃仙迅速撤离，与妹红汇合。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9412751 style='border-right:.5pt solid #993300;
+  border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>23C）前往EMU旁的二号发射塔，一路冲向塔顶。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl9212751 style='border-right:.5pt solid #993300;
+  border-left:none'><span style='mso-spacerun:yes'>&nbsp;</span>24C）在塔顶击破<font
+  class="font912751">村纱水蜜</font><font class="font612751">，但是未能阻止死亡电波的发射，学园都市毁灭，妹红辉夜回归隙间之里被消除记忆。</font></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td colspan=5 class=xl8612751 style='border-right:.5pt solid #993300;
+  border-left:none' x:str="（Bad Ending） ">（Bad Ending）<span
+  style='mso-spacerun:yes'>&nbsp;</span></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4912751 style='height:17.25pt'>章节奖励：</td>
+  <td class=xl2812751>0/62</td>
+  <td class=xl2912751>1/62</td>
+  <td class=xl2812751>25/62</td>
+  <td class=xl2912751>51/62</td>
+  <td class=xl2712751>62/62</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td class=xl3912751>金钱+40000</td>
+  <td class=xl3712751>『奶油蘑菇浓汤』*7</td>
+  <td class=xl4012751>『极限护膝』</td>
+  <td class=xl3712751>『皇家盛宴』*5</td>
+  <td class=xl5812751>饰品公式：</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td class=xl3912751>　</td>
+  <td class=xl3712751>『宝石铃兰』*3</td>
+  <td class=xl4012751>『警醒印』</td>
+  <td class=xl3712751><span style='mso-spacerun:yes'>&nbsp;</span>『九珍鼠儿果』*1</td>
+  <td class=xl6812751>『八意永琳的挂饰』</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4512751 style='height:17.25pt'>　</td>
+  <td class=xl3212751>　</td>
+  <td class=xl3612751>『金角鱼』*1</td>
+  <td class=xl3212751>　</td>
+  <td class=xl6412751>『蔷薇特产调味料』*3</td>
+  <td class=xl6512751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5012751 style='height:17.25pt'>　</td>
+  <td class=xl6612751>　</td>
+  <td class=xl6712751>　</td>
+  <td class=xl6612751>　</td>
+  <td class=xl6712751>『鲤鱼王』*3</td>
+  <td class=xl5912751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td align=left valign=top><!--[if gte vml 1]><v:shape id="Picture_x0020_24"
+   o:spid="_x0000_s12301" type="#_x0000_t75" alt="信号发射塔" style='position:absolute;
+   margin-left:3pt;margin-top:1.5pt;width:418.5pt;height:509.25pt;z-index:2;
+   visibility:visible'>
+   <v:imagedata src="Chapter%205.files/第二章_12751_image003.png" o:title="信号发射塔"/>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+   </x:ClientData>
+  </v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+  position:absolute;z-index:2;margin-left:4px;margin-top:2px;width:558px;
+  height:679px'><img width=558 height=679
+  src="Chapter%205.files/第二章_12751_image004.gif" alt=信号发射塔 v:shapes="Picture_x0020_24"></span><![endif]><span
+  style='mso-ignore:vglayout2'>
+  <table cellpadding=0 cellspacing=0>
+   <tr>
+    <td height=23 class=xl3512751 width=165 style='height:17.25pt;width:124pt'>　</td>
+   </tr>
+  </table>
+  </span></td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl6212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl6212751>信号发射塔</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl6212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>3F：</td>
+  <td class=xl6212751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751 colspan=2 style='border-right:.5pt solid #993300'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>『珍藏果粒橙』*1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751 colspan=2 style='border-right:.5pt solid #993300'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>『速食B套餐』*1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751 colspan=2 style='border-right:.5pt solid #993300'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>『珊露奶粉』*1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751>　</td>
+  <td class=xl3512751 colspan=2 style='border-right:.5pt solid #993300'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>『秘制红药水』*1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3512751 colspan=2 style='border-right:.5pt solid #993300'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>『奶油蘑菇浓汤』*1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3512751 colspan=2 style='border-right:.5pt solid #993300'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>『奶油蘑菇浓汤』*1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl5312751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl5312751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>2F：</td>
+  <td class=xl5312751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3512751 colspan=2 style='border-right:.5pt solid #993300'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>『珍藏果粒橙』*1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3512751 colspan=2 style='border-right:.5pt solid #993300'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>『奶油蘑菇浓汤』*1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3512751 colspan=2 style='border-right:.5pt solid #993300'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>『宝石铃兰』*1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3512751><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>『彩虹石』*1</td>
+  <td class=xl5312751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751 colspan=2><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>控制室</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3512751 colspan=2 style='border-right:.5pt solid #993300'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>『秘制红药水』*1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3512751 colspan=2 style='border-right:.5pt solid #993300'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>『奶油蘑菇浓汤』*1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3512751><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>『珍珠』*1</td>
+  <td class=xl5312751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3512751 colspan=2 style='border-right:.5pt solid #993300'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>『奶油蘑菇浓汤』*1</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3512751><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>金钱 8000</td>
+  <td class=xl5312751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl5312751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751 colspan=2>1F：<span style='mso-spacerun:yes'>&nbsp;
+  </span>『珍藏果粒橙』*1</td>
+  <td class=xl5312751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>『口服青霉素』*1</td>
+  <td class=xl3112751>　</td>
+  <td class=xl5312751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl5312751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3312751>&#9642;</td>
+  <td class=xl5312751>进出口</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3412751>&#9642;</td>
+  <td class=xl5312751>宝箱</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl5412751 style='height:17.25pt'>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl3112751>　</td>
+  <td class=xl5312751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl6012751 style='height:17.25pt'>　</td>
+  <td class=xl6112751>　</td>
+  <td class=xl6112751>　</td>
+  <td class=xl6112751>　</td>
+  <td class=xl6112751>　</td>
+  <td class=xl6312751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl2412751 style='height:17.25pt'></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl2412751 style='height:17.25pt'><span
+  style='mso-spacerun:yes'>&nbsp;</span>相关战斗：</td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td colspan=2 height=23 class=xl11812751 style='border-right:.5pt solid #993300;
+  height:17.25pt'>姬川沙耶</td>
+  <td class=xl2612751><span style='mso-spacerun:yes'>&nbsp;</span>HP：3,250,000</td>
+  <td class=xl2612751>　</td>
+  <td class=xl2612751>　</td>
+  <td class=xl4412751>难易度：★</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+  <td align=left valign=top><!--[if gte vml 1]><v:shape id="_x0000_s12328"
+   type="#_x0000_t75" style='position:absolute;margin-left:12pt;margin-top:11.25pt;
+   width:19.5pt;height:28.5pt;z-index:3'>
+   <v:imagedata src="Chapter%205.files/第二章_12751_image005.png" o:title="姬川沙耶"/>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+   </x:ClientData>
+  </v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+  position:absolute;z-index:3;margin-left:16px;margin-top:15px;width:26px;
+  height:38px'><img width=26 height=38
+  src="Chapter%205.files/第二章_12751_image006.gif" v:shapes="_x0000_s12328"></span><![endif]><span
+  style='mso-ignore:vglayout2'>
+  <table cellpadding=0 cellspacing=0>
+   <tr>
+    <td height=23 class=xl4812751 width=165 style='height:17.25pt;width:124pt'>　</td>
+   </tr>
+  </table>
+  </span></td>
+  <td colspan=4 rowspan=3 class=xl12612751 width=825 style='border-right:.5pt solid #993300;
+  border-bottom:.5pt solid #993300;width:496pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>血量虽然不高但是每个技能都附带体力吸收效果，恢复能力较高。如果输出不够可以利用料理进行爆发，速战速决。这里不建议妹红开附体，需要群体治疗可以利用慧音的高天原反转中毒效果。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+  <td class=xl4812751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4212751 style='height:17.25pt'>　</td>
+  <td class=xl4712751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl2412751 style='height:17.25pt'></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td colspan=2 height=23 class=xl11812751 style='border-right:.5pt solid #993300;
+  height:17.25pt'>憎恶集合体</td>
+  <td class=xl2612751><span style='mso-spacerun:yes'>&nbsp;</span>HP：3,000,000</td>
+  <td class=xl2612751>　</td>
+  <td class=xl2612751>　</td>
+  <td class=xl4412751>难易度：★★☆</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+  <td align=left valign=top><!--[if gte vml 1]><v:shape id="_x0000_s12329"
+   type="#_x0000_t75" style='position:absolute;margin-left:12.75pt;
+   margin-top:8.25pt;width:21.75pt;height:34.5pt;z-index:4'>
+   <v:imagedata src="Chapter%205.files/第二章_12751_image007.png" o:title="姬川沙耶-憎恶集合体"/>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+    <x:AutoPict/>
+   </x:ClientData>
+  </v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+  position:absolute;z-index:4;margin-left:17px;margin-top:11px;width:29px;
+  height:46px'><img width=29 height=46
+  src="Chapter%205.files/第二章_12751_image008.gif" v:shapes="_x0000_s12329"></span><![endif]><span
+  style='mso-ignore:vglayout2'>
+  <table cellpadding=0 cellspacing=0>
+   <tr>
+    <td height=23 class=xl4812751 width=165 style='height:17.25pt;width:124pt'>　</td>
+   </tr>
+  </table>
+  </span></td>
+  <td colspan=4 rowspan=3 class=xl12612751 width=825 style='border-right:.5pt solid #993300;
+  border-bottom:.5pt solid #993300;width:496pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>侵蚀效果使得你每行动一次都会受到一次伤害并为对方恢复体力。慧音负责将不良状态反转，妹红辉夜全力输出，这一战对输出的要求较高，若输出不足可以靠料理爆发或者拖回合叠Combo应对。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+  <td class=xl4812751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4212751 style='height:17.25pt'>　</td>
+  <td class=xl4712751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl2412751 style='height:17.25pt'></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td colspan=2 height=23 class=xl11812751 style='border-right:.5pt solid #993300;
+  height:17.25pt'>米斯蒂娅·萝蕾拉</td>
+  <td colspan=3 class=xl7412751 style='border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>HP：2,120,000</td>
+  <td class=xl4612751>难易度：☆</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+  <td align=left valign=top><!--[if gte vml 1]><v:shape id="_x0000_s12330"
+   type="#_x0000_t75" style='position:absolute;margin-left:15.75pt;
+   margin-top:2.25pt;width:15pt;height:29.25pt;z-index:5'>
+   <v:imagedata src="Chapter%205.files/第二章_12751_image009.png" o:title="米斯蒂娅"/>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+   </x:ClientData>
+  </v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+  position:absolute;z-index:5;margin-left:21px;margin-top:3px;width:20px;
+  height:39px'><img width=20 height=39
+  src="Chapter%205.files/第二章_12751_image010.gif" v:shapes="_x0000_s12330"></span><![endif]><span
+  style='mso-ignore:vglayout2'>
+  <table cellpadding=0 cellspacing=0>
+   <tr>
+    <td height=23 class=xl4812751 width=165 style='height:17.25pt;width:124pt'>　</td>
+   </tr>
+  </table>
+  </span></td>
+  <td colspan=4 rowspan=2 class=xl7612751 width=825 style='border-right:.5pt solid #993300;
+  border-bottom:.5pt solid #993300;width:496pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>没什么威胁的战斗，慧音可以反转状态辅助妹红输出。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4212751 style='height:17.25pt'>　</td>
+  <td class=xl4712751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl2412751 style='height:17.25pt'></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td colspan=2 height=23 class=xl11812751 style='border-right:.5pt solid #993300;
+  height:17.25pt'>因幡Z</td>
+  <td class=xl2612751><span style='mso-spacerun:yes'>&nbsp;</span>HP：4,000,000</td>
+  <td class=xl2612751>　</td>
+  <td class=xl2612751>　</td>
+  <td class=xl4412751>难易度：★★★</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+  <td class=xl4812751>　</td>
+  <td colspan=4 rowspan=4 class=xl7612751 width=825 style='border-right:.5pt solid #993300;
+  width:496pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>可败但是影响结局的战斗，慧音继续反转状态为妹红辅助，特别是点燃状态，点燃反转后可以变为红莲状态，强化妹红的输出，同时由于Z的技能很多是金属性，红莲状态下可以降低受到的金属性伤害。Z血量降到30%以下会使用幻象追随者获得速增与恢复，这时可以加大输出量一鼓作气结束战斗。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+  <td rowspan=3 height=69 class=xl4812751 width=825 style='mso-ignore:colspan-rowspan;
+  height:51.75pt;width:124pt'><!--[if gte vml 1]><v:shape id="_x0000_s12331"
+   type="#_x0000_t75" style='position:absolute;margin-left:3pt;margin-top:5.25pt;
+   width:42pt;height:36.75pt;z-index:6'>
+   <v:imagedata src="Chapter%205.files/第二章_12751_image011.png" o:title="因幡ZERO"/>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+   </x:ClientData>
+  </v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+  <table cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=4 height=7></td>
+   </tr>
+   <tr>
+    <td></td>
+    <td><img width=56 height=49 src="Chapter%205.files/第二章_12751_image012.gif"
+    v:shapes="_x0000_s12331"></td>
+    <td width=105></td>
+   </tr>
+   <tr>
+    <td height=13></td>
+   </tr>
+  </table>
+  </span><![endif]><!--[if !mso & vml]><span style='width:123.75pt;height:51.75pt'></span><![endif]--></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4212751 style='height:17.25pt'>　</td>
+  <td class=xl4712751>　</td>
+  <td class=xl2512751 colspan=2><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>相关称号：【最凶战斗兵器】</td>
+  <td class=xl2512751>　</td>
+  <td class=xl4712751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl2412751 style='height:17.25pt'></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td colspan=2 height=23 class=xl11812751 style='border-right:.5pt solid #993300;
+  height:17.25pt'>八意永琳</td>
+  <td colspan=3 class=xl7412751 style='border-left:none'><span
+  style='mso-spacerun:yes'>&nbsp;</span>HP：6,500,000</td>
+  <td class=xl4412751>难易度：★★★★</td>
+ </tr>
+ <tr height=23 style='mso-height-source:userset;height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+  <td align=left valign=top><!--[if gte vml 1]><v:shape id="_x0000_s12332"
+   type="#_x0000_t75" style='position:absolute;margin-left:10.5pt;margin-top:15.75pt;
+   width:24.75pt;height:37.5pt;z-index:7'>
+   <v:imagedata src="Chapter%205.files/第二章_12751_image013.png" o:title="八意永琳"/>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+   </x:ClientData>
+  </v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;
+  position:absolute;z-index:7;margin-left:14px;margin-top:21px;width:33px;
+  height:50px'><img width=33 height=50
+  src="Chapter%205.files/第二章_12751_image014.gif" v:shapes="_x0000_s12332"></span><![endif]><span
+  style='mso-ignore:vglayout2'>
+  <table cellpadding=0 cellspacing=0>
+   <tr>
+    <td height=23 class=xl4812751 width=165 style='height:17.25pt;width:124pt'>　</td>
+   </tr>
+  </table>
+  </span></td>
+  <td colspan=4 rowspan=3 class=xl12612751 width=825 style='border-right:.5pt solid #993300;
+  width:496pt'> <span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>虽不是神将但难度接近于神将，苏生游戏的恢复量极高，可以让铃仙上致伤防止大量恢复。血量到40%以下后永琳会发动天文密葬法并中毒，这时可以全力输出尽快结束战斗，若要获得称号则需要在永琳血量在40%以上时依靠高Combo一击致命。血量50%以下会释放天网蛛网捕蝶之法，容易造成死伤或者断链，务必小心。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+  <td class=xl4812751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+  <td class=xl4812751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4212751 style='height:17.25pt'>　</td>
+  <td class=xl4712751>　</td>
+  <td class=xl2512751 colspan=3><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>相关称号：【思兼的决意】、【千年幻想乡】</td>
+  <td class=xl4712751>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl2412751 style='height:17.25pt'></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+  <td class=xl2412751></td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td colspan=2 height=23 class=xl11812751 style='border-right:.5pt solid #993300;
+  height:17.25pt'>村纱水蜜</td>
+  <td class=xl2612751><span style='mso-spacerun:yes'>&nbsp;</span>HP：6,000,000</td>
+  <td class=xl2612751>　</td>
+  <td class=xl2612751>　</td>
+  <td class=xl4412751>难易度：★★★</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+  <td rowspan=4 height=92 class=xl4812751 width=825 style='mso-ignore:colspan-rowspan;
+  height:69.0pt;width:124pt'><!--[if gte vml 1]><v:shape id="_x0000_s12333"
+   type="#_x0000_t75" style='position:absolute;margin-left:2.25pt;margin-top:15pt;
+   width:48pt;height:51pt;z-index:8'>
+   <v:imagedata src="Chapter%205.files/第二章_12751_image015.png" o:title="村纱水蜜"/>
+   <x:ClientData ObjectType="Pict">
+    <x:SizeWithCells/>
+    <x:CF>Bitmap</x:CF>
+   </x:ClientData>
+  </v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+  <table cellpadding=0 cellspacing=0>
+   <tr>
+    <td width=3 height=20></td>
+   </tr>
+   <tr>
+    <td></td>
+    <td><img width=64 height=68 src="Chapter%205.files/第二章_12751_image016.gif"
+    v:shapes="_x0000_s12333"></td>
+    <td width=98></td>
+   </tr>
+   <tr>
+    <td height=4></td>
+   </tr>
+  </table>
+  </span><![endif]><!--[if !mso & vml]><span style='width:123.75pt;height:69.0pt'></span><![endif]--></td>
+  <td colspan=4 rowspan=4 class=xl7612751 width=825 style='border-right:.5pt solid #993300;
+  width:496pt'><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>威胁最大的技能是决战之锚，斗气/金耀状态下很容易一发造成团灭，读条时间较长，建议全人物防御应对，速度够的情况下铃仙可以驱散斗气/金耀减小威胁。船长每隔一定回合会自动获得斗气和净化状态，若慧音在场还会另外获得10%恢复和急速状态（即每次行动会恢复近60W的血量），输出不够的话可以叠Combo磨死或依靠料理爆发。</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4112751 style='height:17.25pt'>　</td>
+ </tr>
+ <tr height=23 style='height:17.25pt'>
+  <td height=23 class=xl4212751 style='height:17.25pt'>　</td>
+  <td class=xl4712751>　</td>
+  <td class=xl2512751 colspan=2><span
+  style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>相关称号：【惨憺的大海原】</td>
+  <td class=xl2512751>　</td>
+  <td class=xl4712751>　</td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=95 style='width:71pt'></td>
+  <td width=825 style='width:124pt'></td>
+  <td width=825 style='width:124pt'></td>
+  <td width=825 style='width:124pt'></td>
+  <td width=825 style='width:124pt'></td>
+  <td width=825 style='width:124pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+
+
+<!----------------------------->
+<!--“从 EXCEL 发布网页”向导结束-->
+<!----------------------------->
+</body>
+
+</html>
+
+
+
+
+
+

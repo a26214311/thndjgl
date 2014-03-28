@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>伤害计算器</title>
+<script type="text/javascript"  src="javascripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var now=new Date().getTime();
+	$('#pluginid')[0].value=now;
+}
+);
+function t(){
+	var s=document.getElementsByName("self");
+	alert(s[0].value);
+	alert(s[2].value);
+	alert(111);
+}
+</script>
+</head>
+<body>
+<table borderColor=#f14545 border=1>
+<tr><td>攻击方能力</td><td>被攻击方能力</td></tr>
+<tr><td>攻击：<input name="self" type="text" value=""></input></td><td>物理防御：<input name="enemy" type="text" value=""></td></tr>
+<tr><td>力量：<input name="self" type="text" value=""></input></td><td>魔法防御：<input name="enemy" type="text" value=""></td></tr>
+<tr><td>灵巧：<input name="self" type="text" value=""></input></td><td>回避等级：<input name="enemy" type="text" value=""></td></tr>
+<tr><td>速度：<input name="self" type="text" value=""></input></td></tr>
+<tr><td>魔力：<input name="self" type="text" value=""></input></td></tr>
+<tr><td>命中：<input name="self" type="text" value=""></input></td></tr>
+<tr><td>回避：<input name="self" type="text" value=""></input></td></tr>
+</table>
+<button onclick="t();">计算</button>
+</body>
+</html>

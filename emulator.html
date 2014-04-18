@@ -258,6 +258,10 @@ function t(){
 			alert('没有祝福怎么吐出来，这是作弊！');
 			return;
 		}
+		if(parseInt($('#level')[0].value)-2*n < 1){
+			alert('等级都到1了还想吃祝福？在吃祝福就把你连祝福一起吞掉');
+			return;
+		}
 		
 		$('#level')[0].value = parseInt($('#level')[0].value)-2*n;
 		$('#bless')[0].value = parseInt($('#bless')[0].value)+1*n;

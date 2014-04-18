@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>伤害计算器</title>
+<script type="text/javascript"  src="javascripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var now=new Date().getTime();
+
+}
+);
+function t(){
+}
+</script>
+</head>
+<body>
+<select>
+<option value="0">请选择人物</option>
+</select>
+
+<table>
+<tr>
+<td>当前等级：<input type="text" id="level" value="1"></input></td>
+<td><button onclick="levelup(1);">升1级</button></td>
+<td><button onclick="levelup(10);">升10级</button></td>
+<td><button onclick="levelup(-1);">降1级</button></td>
+<td><button onclick="levelup(-10);">降10级</button></td>
+</tr>
+<tr><td>已吃祝福：<input type="text" id="bless" value="0"></input></td>
+<td><button onclick="bless(1);">吃祝福</button></td>
+<td><button onclick="bless(-1);">吐祝福</button></td>
+</tr>
+</table>
+
+
+<table borderColor=#f14545 border=1>
+<tr><td></td><td>成长值</td><td>已喂料理数</td><td>当前能力</td></tr>
+<tr><td>HP:</td>
+<td><input name="plus" type="text" value="70"></input></td><td>
+<table><tr><td>1:</td><td>1</td></tr><tr><td>2:</td><td>2</td></tr></table>
+</td><td><input name="now" type="text" value="0"></input></td></tr>
+<tr><td>MP:</td>
+<td><input name="plus" type="text" value="40"></input></td><td>
+<table><tr><td>1:</td><td>1</td></tr><tr><td>2:</td><td>2</td></tr></table>
+</td><td><input name="now" type="text" value="0"></input></td></tr>
+<tr><td>力量:</td>
+<td><input name="plus" type="text" value="5"></input></td><td>
+<table><tr><td>1:</td><td>1</td></tr><tr><td>2:</td><td>2</td></tr></table>
+</td><td><input name="now" type="text" value="0"></input></td></tr>
+<tr><td>灵巧:</td>
+<td><input name="plus" type="text" value="5"></input></td><td>
+<table><tr><td>1:</td><td>1</td></tr><tr><td>2:</td><td>2</td></tr></table>
+</td><td><input name="now" type="text" value="0"></input></td></tr>
+<tr><td>速度:</td>
+<td><input name="plus" type="text" value="3"></input></td><td>
+<table><tr><td>1:</td><td>1</td></tr><tr><td>2:</td><td>2</td></tr></table>
+</td><td><input name="now" type="text" value="0"></input></td></tr>
+<tr><td>魔力:</td>
+<td><input name="plus" type="text" value="1"></input></td><td>
+<table><tr><td>1:</td><td>1</td></tr><tr><td>2:</td><td>2</td></tr></table>
+</td><td><input name="now" type="text" value="0"></input></td></tr>
+
+<tr>
+<td>剩余点数<br><input type="text" value=0 disabled="true" id="rest"></input></td>
+<td colspan="4">
+<table>
+<tr>
+
+<td><input type="text" disabled="true" name="plusp" value=0></input></td>
+<td><input type="text" disabled="true" name="plusp" value=0></input></td>
+<td><input type="text" disabled="true" name="plusp" value=0></input></td>
+<td><input type="text" disabled="true" name="plusp" value=0></input></td>
+<td><input type="text" disabled="true" name="plusp" value=0></input></td>
+
+</tr>
+<tr>
+<td><button onclick="add(0,1);">体力+1</button></td>
+<td><button onclick="add(1,1);">力量+1</button></td>
+<td><button onclick="add(2,1);">灵巧+1</button></td>
+<td><button onclick="add(3,1);">速度+1</button></td>
+<td><button onclick="add(4,1);">魔力+1</button></td>
+</tr>
+<tr>
+<td><button onclick="add(0,10);">体力+10</button></td>
+<td><button onclick="add(1,10);">力量+10</button></td>
+<td><button onclick="add(2,10);">灵巧+10</button></td>
+<td><button onclick="add(3,10);">速度+10</button></td>
+<td><button onclick="add(4,10);">魔力+10</button></td>
+</tr>
+<tr>
+<td><button onclick="add(0,-1);">体力-1</button></td>
+<td><button onclick="add(1,-1);">力量-1</button></td>
+<td><button onclick="add(2,-1);">灵巧-1</button></td>
+<td><button onclick="add(3,-1);">速度-1</button></td>
+<td><button onclick="add(4,-1);">魔力-1</button></td>
+</tr>
+<tr>
+<td><button onclick="add(0,-10);">体力-10</button></td>
+<td><button onclick="add(1,-10);">力量-10</button></td>
+<td><button onclick="add(2,-10);">灵巧-10</button></td>
+<td><button onclick="add(3,-10);">速度-10</button></td>
+<td><button onclick="add(4,-10);">魔力-10</button></td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+
+
+<button onclick="t();">计算</button>
+
+<script type="text/javascript">
+	function add(type,num){
+		if(parseInt($('#rest')[0].value)<num){
+			alert('剩余点数不足');
+			return;
+		}
+		document.getElementsByName("plusp")[type].value = parseInt(document.getElementsByName("plusp")[type].value)+num;
+		$('#rest')[0].value = parseInt($('#rest')[0].value) - num;
+		var a = new Array();
+		if(type==0)
+			a=[25,20,0,0,0,0];
+		else if(type==1)
+			a=[15,2,3,0,0,0];
+		else if(type==2)
+			a=[2,2,0,3,0,0];
+		else if(type==3)
+			a=[0,0,0,0,2,0];
+		else if(type==4)
+			a=[2,15,0,0,0,3];
+		else
+			alert(type);
+		for(var i=0;i<6;i++){
+			document.getElementsByName("now")[i].value = parseInt(document.getElementsByName("now")[i].value)+a[i]*num;
+		}
+	}
+	
+	function levelup(l){
+		$('#level')[0].value = parseInt($('#level')[0].value)+l;
+		$('#rest')[0].value = parseInt($('#rest')[0].value) + 5*l;
+		for(var i=0;i<6;i++){
+			document.getElementsByName("now")[i].value = parseInt(document.getElementsByName("now")[i].value) + l*parseInt(document.getElementsByName("plus")[i].value)
+			
+		}
+	}
+	function bless(n){
+		$('#level')[0].value = parseInt($('#level')[0].value)-2*n;
+		$('#bless')[0].value = parseInt($('#bless')[0].value)+1*n;
+		for(var i=0;i<6;i++){
+			document.getElementsByName("now")[i].value = parseInt(document.getElementsByName("now")[i].value) - 2*n*parseInt(document.getElementsByName("plus")[i].value)
+		}
+	}
+</script>
+
+</body>
+</html>

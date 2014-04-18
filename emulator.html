@@ -64,7 +64,7 @@ function t(){
 <table borderColor=#f14545 border=1>
 <tr><td></td><td>成长值</td><td>已喂料理数</td><td>当前能力</td>
 
-<td rowspan="2">
+<td rowspan="3">
 <table>
 <tr>
 <td colspan="5">剩余点数<br><input type="text" value=0 id="rest" style="width:70px;"></input><br><button>自动分配点数</button></td>
@@ -106,7 +106,20 @@ function t(){
 <td><button onclick="add(3,-10);">速度-10</button></td>
 <td><button onclick="add(4,-10);">魔力-10</button></td>
 </tr>
-
+<tr>
+<td><button onclick="add(0,100);">体力+100</button></td>
+<td><button onclick="add(1,100);">力量+100</button></td>
+<td><button onclick="add(2,100);">灵巧+100</button></td>
+<td><button onclick="add(3,100);">速度+100</button></td>
+<td><button onclick="add(4,100);">魔力+100</button></td>
+</tr>
+<tr>
+<td><button onclick="add(0,-100);">体力-100</button></td>
+<td><button onclick="add(1,-100);">力量-100</button></td>
+<td><button onclick="add(2,-100);">灵巧-100</button></td>
+<td><button onclick="add(3,-100);">速度-100</button></td>
+<td><button onclick="add(4,-100);">魔力-100</button></td>
+</tr>
 </table>
 </td>
 

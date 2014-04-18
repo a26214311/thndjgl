@@ -229,6 +229,10 @@ function t(){
 	}
 	
 	function levelup(l){
+		if(parseInt($('#level')[0].value)+l < 1){
+			alert('再降级就吃掉你');
+			return;
+		}
 		$('#level')[0].value = parseInt($('#level')[0].value)+l;
 		$('#rest')[0].value = parseInt($('#rest')[0].value) + 5*l;
 		for(var i=0;i<6;i++){
@@ -237,6 +241,11 @@ function t(){
 		}
 	}
 	function bless(n){
+		if(parseInt($('#bless')[0].value)+1*n < 0){
+			alert('没有祝福怎么吐出来，这是作弊！');
+			return;
+		}
+		
 		$('#level')[0].value = parseInt($('#level')[0].value)-2*n;
 		$('#bless')[0].value = parseInt($('#bless')[0].value)+1*n;
 		for(var i=0;i<6;i++){
@@ -270,6 +279,10 @@ function t(){
 		else if(type==5){
 			d="in";
 			a=[14,26,13];
+		}
+		if(		parseInt(document.getElementsByName(d)[i].value) + n  <0){
+			alert('还想吐？再吐就把你抓去喂露米娅');
+			return;
 		}
 		document.getElementsByName(d)[i].value = parseInt(document.getElementsByName(d)[i].value) + n;
 		document.getElementsByName("now")[type].value= parseInt(document.getElementsByName("now")[type].value)+ n*a[i];

@@ -243,12 +243,20 @@ function t(){
 	}
 	
 	function levelup(l){
+		if(parseInt($('#level')[0].value) >99){
+			alert('你是用何种方式把等级变成'+parseInt($('#level')[0].value)+'的？过来乖乖让我吃掉就原谅你');
+			return;
+		}
 		if(parseInt($('#level')[0].value) < 1){
 			alert('你是用何种方式把等级变成'+parseInt($('#level')[0].value)+'的？过来乖乖让我吃掉就原谅你');
 			return;
 		}
 		if(parseInt($('#level')[0].value)+l < 1){
 			alert('再降级就吃掉你');
+			return;
+		}
+		if(parseInt($('#level')[0].value)+l > 99){
+			alert('再升级就爆炸成爆米花了，应该还好吃吧');
 			return;
 		}
 		$('#level')[0].value = parseInt($('#level')[0].value)+l;

@@ -49,7 +49,7 @@ function t(){
 
 <table>
 <tr>
-<td>当前等级：<input type="text" id="level" value="1"></input></td>
+<td><strong>当前等级：</strong><input type="text" id="level" value="1"></input></td>
 <td><button onclick="levelup(1);">升1级</button></td>
 <td><button onclick="levelup(10);">升10级</button></td>
 <td><button onclick="levelup(-1);">降1级</button></td>
@@ -63,12 +63,12 @@ function t(){
 
 
 <table borderColor=#f14545 border=1>
-<tr><td></td><td>成长值</td><td>已喂料理数</td><td>当前能力</td>
+<tr><td></td><td>成长值</td><td>已喂料理数</td><td><strong>当前能力</strong></td>
 
-<td rowspan="3">
+<td rowspan="2">
 <table>
 <tr>
-<td colspan="5">剩余点数<br><input type="text" value=0 id="rest" style="width:70px;"></input><br><button>自动分配点数</button></td>
+<td><strong>剩余点数:</strong></td><td><input type="text" value=0 id="rest" style="width:70px;"></input></td><td colspan="3"><button>自动分配点数</button></td>
 </tr>
 <tr>
 
@@ -80,46 +80,46 @@ function t(){
 
 </tr>
 <tr>
-<td><button onclick="add(0,1);">体力+1</button></td>
-<td><button onclick="add(1,1);">力量+1</button></td>
-<td><button onclick="add(2,1);">灵巧+1</button></td>
-<td><button onclick="add(3,1);">速度+1</button></td>
-<td><button onclick="add(4,1);">魔力+1</button></td>
+<td><button style="width:75px;" onclick="add(0,1);">体力+1</button></td>
+<td><button style="width:75px;" onclick="add(1,1);">力量+1</button></td>
+<td><button style="width:75px;" onclick="add(2,1);">灵巧+1</button></td>
+<td><button style="width:75px;" onclick="add(3,1);">速度+1</button></td>
+<td><button style="width:75px;" onclick="add(4,1);">魔力+1</button></td>
 </tr>
 <tr>
-<td><button onclick="add(0,10);">体力+10</button></td>
-<td><button onclick="add(1,10);">力量+10</button></td>
-<td><button onclick="add(2,10);">灵巧+10</button></td>
-<td><button onclick="add(3,10);">速度+10</button></td>
-<td><button onclick="add(4,10);">魔力+10</button></td>
+<td><button style="width:75px;" onclick="add(0,10);">体力+10</button></td>
+<td><button style="width:75px;" onclick="add(1,10);">力量+10</button></td>
+<td><button style="width:75px;" onclick="add(2,10);">灵巧+10</button></td>
+<td><button style="width:75px;" onclick="add(3,10);">速度+10</button></td>
+<td><button style="width:75px;" onclick="add(4,10);">魔力+10</button></td>
 </tr>
 <tr>
-<td><button onclick="add(0,-1);">体力-1</button></td>
-<td><button onclick="add(1,-1);">力量-1</button></td>
-<td><button onclick="add(2,-1);">灵巧-1</button></td>
-<td><button onclick="add(3,-1);">速度-1</button></td>
-<td><button onclick="add(4,-1);">魔力-1</button></td>
+<td><button style="width:75px;" onclick="add(0,-1);">体力-1</button></td>
+<td><button style="width:75px;" onclick="add(1,-1);">力量-1</button></td>
+<td><button style="width:75px;" onclick="add(2,-1);">灵巧-1</button></td>
+<td><button style="width:75px;" onclick="add(3,-1);">速度-1</button></td>
+<td><button style="width:75px;" onclick="add(4,-1);">魔力-1</button></td>
 </tr>
 <tr>
-<td><button onclick="add(0,-10);">体力-10</button></td>
-<td><button onclick="add(1,-10);">力量-10</button></td>
-<td><button onclick="add(2,-10);">灵巧-10</button></td>
-<td><button onclick="add(3,-10);">速度-10</button></td>
-<td><button onclick="add(4,-10);">魔力-10</button></td>
+<td><button style="width:75px;" onclick="add(0,-10);">体力-10</button></td>
+<td><button style="width:75px;" onclick="add(1,-10);">力量-10</button></td>
+<td><button style="width:75px;" onclick="add(2,-10);">灵巧-10</button></td>
+<td><button style="width:75px;" onclick="add(3,-10);">速度-10</button></td>
+<td><button style="width:75px;" onclick="add(4,-10);">魔力-10</button></td>
 </tr>
 <tr>
-<td><button onclick="add(0,100);">体力+100</button></td>
-<td><button onclick="add(1,100);">力量+100</button></td>
-<td><button onclick="add(2,100);">灵巧+100</button></td>
-<td><button onclick="add(3,100);">速度+100</button></td>
-<td><button onclick="add(4,100);">魔力+100</button></td>
+<td><button style="width:75px;" onclick="add(0,100);">体力+100</button></td>
+<td><button style="width:75px;" onclick="add(1,100);">力量+100</button></td>
+<td><button style="width:75px;" onclick="add(2,100);">灵巧+100</button></td>
+<td><button style="width:75px;" onclick="add(3,100);">速度+100</button></td>
+<td><button style="width:75px;" onclick="add(4,100);">魔力+100</button></td>
 </tr>
 <tr>
-<td><button onclick="add(0,-100);">体力-100</button></td>
-<td><button onclick="add(1,-100);">力量-100</button></td>
-<td><button onclick="add(2,-100);">灵巧-100</button></td>
-<td><button onclick="add(3,-100);">速度-100</button></td>
-<td><button onclick="add(4,-100);">魔力-100</button></td>
+<td><button style="width:75px;" onclick="add(0,-100);">体力-100</button></td>
+<td><button style="width:75px;" onclick="add(1,-100);">力量-100</button></td>
+<td><button style="width:75px;" onclick="add(2,-100);">灵巧-100</button></td>
+<td><button style="width:75px;" onclick="add(3,-100);">速度-100</button></td>
+<td><button style="width:75px;" onclick="add(4,-100);">魔力-100</button></td>
 </tr>
 </table>
 </td>
@@ -158,7 +158,12 @@ function t(){
 <tr><td>特制午后红茶:</td><td><input type="text" value="0" name="mp" style="width:50px;"></input></td>
 <td><button onclick="cook(1,4,1);">+1</button></td><td><button onclick="cook(1,4,-1);">-1</button></td></tr>
 </table>
-</td><td><input name="now" type="text" value="0"></input></td></tr>
+</td><td><input name="now" type="text" value="0"></input></td>
+<td rowspan="5">
+
+
+</td>
+</tr>
 <tr><td>力量:</td>
 <td><input name="plus" type="text" value="0" disabled="true" style="width:50px;"></input></td><td>
 <table>
@@ -169,16 +174,7 @@ function t(){
 <tr><td>天上仙桃:</td><td><input type="text" value="0" name="st" style="width:50px;"></input></td>
 <td><button onclick="cook(2,2,1);">+1</button></td><td><button onclick="cook(2,2,-1);">-1</button></td></tr>
 </table>
-</td><td><input name="now" type="text" value="0"></input></td>
-
-
-<td rowspan="5">
-
-</td>
-
-
-
-</tr>
+</td><td><input name="now" type="text" value="0"></input></td></tr>
 <tr><td>灵巧:</td>
 <td><input name="plus" type="text" value="0" disabled="true" style="width:50px;"></input></td><td>
 <table>

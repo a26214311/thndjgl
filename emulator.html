@@ -222,6 +222,10 @@ function t(){
 			alert('剩余点数不足');
 			return;
 		}
+		if(parseInt(document.getElementsByName("plusp")[type].value)+num <0){
+			alert('在扣点就咬飞你');
+			return;
+		}
 		document.getElementsByName("plusp")[type].value = parseInt(document.getElementsByName("plusp")[type].value)+num;
 		$('#rest')[0].value = parseInt($('#rest')[0].value) - num;
 		var a = new Array();

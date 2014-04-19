@@ -347,6 +347,10 @@ function t(){
 			alert('还想吐？再吐就把你抓去喂露米娅');
 			return;
 		}
+		if(parseInt(document.getElementsByName("now")[type].value)<0){
+			alert('再负数就把你整个扔锅里盖上盖炖熟，不知道好不好吃呢');
+			return;
+		}
 		document.getElementsByName(d)[i].value = parseInt(document.getElementsByName(d)[i].value) + n;
 		document.getElementsByName("now")[type].value= parseInt(document.getElementsByName("now")[type].value)+ n*a[i];
 	}

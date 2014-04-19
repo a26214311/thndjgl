@@ -351,6 +351,10 @@ function t(){
 			alert('再负数就把你整个扔锅里盖上盖炖熟，不知道好不好吃呢');
 			return;
 		}
+		if(parseInt(document.getElementsByName("now")[type].value) + n*a[i] < 0){
+			alert('露米娅，这里有新鲜的人类哦，快来吃吧');
+			return;
+		}
 		document.getElementsByName(d)[i].value = parseInt(document.getElementsByName(d)[i].value) + n;
 		document.getElementsByName("now")[type].value= parseInt(document.getElementsByName("now")[type].value)+ n*a[i];
 	}

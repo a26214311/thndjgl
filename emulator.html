@@ -68,7 +68,7 @@ function t(){
 <td rowspan="2">
 <table>
 <tr>
-<td><strong>剩余点数:</strong></td><td><input type="text" value=0 id="rest" style="width:70px;"></input></td><td colspan="3"><button>自动分配点数</button></td>
+<td><strong>剩余点数:</strong></td><td><input type="text" value=0 id="rest" style="width:70px;"></input></td><td colspan="3"><button onclick="autopoint();">自动分配点数</button></td>
 </tr>
 <tr>
 
@@ -431,6 +431,35 @@ function t(){
 			
 	}
 </script>
+<script type="text/javascript">
+function autopoint(){
+	var hp=parseInt(document.getElementsByName("now")[0].value);
+	var mp=parseInt(document.getElementsByName("now")[1].value);
+	var str=parseInt(document.getElementsByName("now")[2].value);
+	var dex=parseInt(document.getElementsByName("now")[3].value);
+	var spd=parseInt(document.getElementsByName("now")[4].value);
+	var inte=parseInt(document.getElementsByName("now")[5].value);
+	var rest=parseInt($('#rest')[0].value);
+	var nowabi=hp+','+mp+','+str+','+dex+','+spd+','+inte+','+rest;
+	alert('当前能力为：'+nowabi);
+	var need=new Array();
+	
+	//here write need points
+	need[0]=0;
+	need[1]=0;
+	need[2]=0;
+	need[3]=0;
+	need[4]=0;
+	//here end
+	
+	var needp=need[0]+','+need[1]+','+need[2]+','+need[3]+','+need[4];
+	alert('需要加点：'+needp);
+	for(var i=0;i<5;i++){
+		add(i,need[i]);
+	}
 
+	
+}
+</script>
 </body>
 </html>

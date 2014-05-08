@@ -471,7 +471,7 @@ function autopoint(){
 			type[k][k]=type[k][k]+1;
 		}
 		for(var k=0;k<5;k++){
-			var newdmg=dmg(str+3*type[k][1],dex+3*type[k][2],spd+2*type[k][3],inte+type[k][4]);
+			var newdmg=dmg(str+3*type[k][1],dex+3*type[k][2],spd+2*type[k][3],inte+3*type[k][4]);
 			if(newdmg>maxdmg){
 				maxdmg=newdmg;
 				for(var m=0;m<5;m++){

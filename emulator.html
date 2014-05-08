@@ -445,23 +445,88 @@ function autopoint(){
 	var inte=parseInt(document.getElementsByName("now")[5].value);
 	var rest=parseInt($('#rest')[0].value);
 	var nowabi=hp+','+mp+','+str+','+dex+','+spd+','+inte+','+rest;
-	alert('当前能力为：'+nowabi);
+	
 	var need=new Array();
+	var ret = new Array();
+	
+	
+	for(var i=0;i<rest+1;i++){
+		ret[i]=new Array();	
+	}
+	for(var i=0;i<5;i++){
+		ret[0][i]=0;
+	}
+	for(var j=1;j<rest+1;j++){
+		var maxdmg=0;
+		var type= new Array();
+		for(var i=0;i<5;i++){
+			type[i]=new Array();
+		}
+		for(var i=0;i<5;i++){
+			for(var k=0;k<5;k++){
+				type[i][k]=ret[j-1][k];
+			}
+		}
+		for(var k=0;k<5;k++){
+			type[k][k]=type[k][k]+1;
+		}
+		for(var k=0;k<5;k++){
+			var newdmg=dmg(str+3*type[k][1],dex+3*type[k][2],spd+2*type[k][3],inte+type[k][4]);
+			if(newdmg>maxdmg){
+				maxdmg=newdmg;
+				for(var m=0;m<5;m++){
+					ret[j][m]=type[k][m];
+				}
+			}
+		}
+		
+	}
+	
+	var need = new Array();
+	var res='';
+	for(var i=0;i<5;i++){
+		res=res+','+ret[rest][i];
+		need[i]=ret[rest][i];
+	}
+	if(window.confirm('自动加点为'+res.substring(1)+'\n确定要加吗？')){ 
+		for(var i=0;i<5;i++){
+			add(i,need[i]);
+		}
+	}
+	else{ 
+		
+		
+	} 
 	
 	//here write need points
-	need[0]=0;
-	need[1]=0;
-	need[2]=0;
-	need[3]=0;
-	need[4]=0;
+
 	//here end
 	
-	var needp=need[0]+','+need[1]+','+need[2]+','+need[3]+','+need[4];
-	alert('需要加点：'+needp);
-	for(var i=0;i<5;i++){
-		add(i,need[i]);
-	}
 
+	
+
+	
+}
+
+function dmg(str,dex,spd,inte){
+	var atr=0;
+	if(str>inte){
+		atr=str;
+	}else{
+		atr=inte;
+	}
+	var lv=parseInt($('#level')[0].value);
+	var beilv=1.5;
+	if(lv<=30)
+		beilv=(0.26265*Math.pow(dex,0.8)+10)/100;
+	else
+		beilv=(0.2625*Math.pow(dex,0.8)+43-1.1*lv)/100;
+	if(beilv<0.1)
+		beilv=0.1;
+	if(beilv>1)
+		beilv=1;
+	var dmg=atr*((dex/500+1.5)*beilv+1-beilv)*spd;
+	return dmg;
 	
 }
 </script>

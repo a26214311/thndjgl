@@ -575,9 +575,14 @@ function calneed(rest,str,dex,spd,inte){
 }
 
 function calneed2(rest,str,dex,spd,inte){
+	
 	var need = new Array();
 	for(var i=0;i<5;i++){
 		need[i]=0;
+	}
+	if(rest==0){
+		alert('0点还想分配？等着被吃吧');
+		return need;
 	}
 	var maxdmg=0;
 	var atr=0;

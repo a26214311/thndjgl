@@ -313,6 +313,10 @@ function t(){
 			alert('再降级就吃掉你');
 			return;
 		}
+		if(parseInt($('#rest')[0].value)+l*5 < 1){
+			alert('先把点数吐出来才能降级');
+			return;
+		}
 		if(parseInt($('#level')[0].value)+l > 99){
 			alert('再升级就爆炸成爆米花了，应该还好吃吧');
 			return;
@@ -591,8 +595,8 @@ function calneed2(rest,str,dex,spd,inte){
 	}else{
 		atr=inte;
 	}
-	for(var i=0;i<rest;i++){
-		for(var j=0;j<rest-i;j++){
+	for(var i=0;i<rest+1;i++){
+		for(var j=0;j<rest+1-i;j++){
 			var k=rest-i-j;
 			var nowdmg=dmg(atr+3*i,dex+3*j,spd+2*k);
 			if(nowdmg>maxdmg){

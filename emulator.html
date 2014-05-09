@@ -497,10 +497,6 @@ function autopoint(){
 		
 	} 
 	
-	//here write need points
-
-	//here end
-	
 
 	
 
@@ -580,6 +576,9 @@ function calneed(rest,str,dex,spd,inte){
 
 function calneed2(rest,str,dex,spd,inte){
 	var need = new Array();
+	for(var i=0;i<5;i++){
+		need[i]=0;
+	}
 	var maxdmg=0;
 	var atr=0;
 	if(str>inte){

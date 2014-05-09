@@ -446,13 +446,15 @@ function autopoint(){
 	var rest=parseInt($('#rest')[0].value);
 	var nowabi=hp+','+mp+','+str+','+dex+','+spd+','+inte+','+rest;
 	
+	var t1=new Date().getTime();
 	var need=calneed2(rest,str,dex,spd,inte);
-
+	var t2=new Date().getTime();
+	var spend=(t2-t1)/1000;
 	var res='';
 	for(var i=0;i<5;i++){
 		res=res+','+need[i];
 	}
-	if(window.confirm('自动加点为'+res.substring(1)+'\n确定要加吗？')){ 
+	if(window.confirm('耗时'+spend+'秒\n自动加点为'+res.substring(1)+'\n确定要加吗？')){ 
 		for(var i=0;i<5;i++){
 			add(i,need[i]);
 		}
@@ -503,8 +505,6 @@ function dmg(atr,dex,spd){
 function calneed(rest,str,dex,spd,inte){
 	var need=new Array();
 	var ret = new Array();
-	
-	
 	for(var i=0;i<rest+1;i++){
 		ret[i]=new Array();	
 	}

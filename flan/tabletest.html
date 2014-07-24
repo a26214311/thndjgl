@@ -78,6 +78,31 @@ var block=new Array();
 	}
 );
 
+	document.onkeydown=function(evt){
+		var isie = (document.all) ? true:false; 
+		var key; 
+		if(isie){ 
+		key = window.event.keyCode; 
+		}else{ 
+		key = evt.which; 
+		}
+		var x=rx;
+		var y=ry;
+		if(key==37){
+			x--;
+		}else if(key==38){
+			y--;
+		}else if(key==39){
+			x++;
+		}else if(key==40){
+			y++;
+		}else{
+			
+		}
+		var u='t_'+x+'_'+y;
+		move(u);
+	}
+	
    
    	function move(u){
    		var n=u.split("_");

@@ -188,15 +188,15 @@ var block=new Array();
    				if(can){
    					if(block[i][j]==0&&(i!=rx||j!=ry)){
    	   					var dis=Math.abs(i-rx)+Math.abs(j-ry);
-   	   					if(dis<bestdis){
-   	   						bestdis=dis;
+   	   					if(dis+cc<bestdis){
+   	   						bestdis=dis+cc;
    	   						var tij=new Array();
    	   						tij[0]=i;
    	   						tij[1]=j;
    	   						possible=new Array();
    	   						possible[possible.length]=tij;
-   	   					}else if(dis==bestdis){
-   	   						bestdis=dis;
+   	   					}else if(dis+cc==bestdis){
+   	   						bestdis=dis+cc;
    	   						var tij=new Array();
    	   						tij[0]=i;
    	   						tij[1]=j;

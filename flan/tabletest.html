@@ -89,16 +89,17 @@ var block=new Array();
 		var x=rx;
 		var y=ry;
 		if(key==37){
-			x--;
-		}else if(key==38){
 			y--;
+		}else if(key==38){
+			x--;
 		}else if(key==39){
-			x++;
-		}else if(key==40){
 			y++;
+		}else if(key==40){
+			x++;
 		}else{
 			
 		}
+		alert(key);
 		var u='t_'+x+'_'+y;
 		move(u);
 	}

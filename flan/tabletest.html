@@ -99,7 +99,7 @@ var block=new Array();
 		}else if(key==40){
 			x++;
 		}else{
-			
+			return;
 		}
 		var u='t_'+x+'_'+y;
 		move(u);
@@ -121,10 +121,10 @@ var block=new Array();
    	   				blockone();
    	   			checkwin();
    			}else{
-   				alert('blocked');
+   				//alert('blocked');
    			}
    		}else{
-   			alert('too far');
+   			//alert('too far');
    		}
    	}
    	

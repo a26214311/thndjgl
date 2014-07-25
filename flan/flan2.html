@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>tabletest</title>
+    
+<script type="text/javascript"  src="../javascripts/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+<div id="main">
+<table borderColor=#2459EB border=1>
+<tr>
+<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
+<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
+<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
+<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
+</tr>
+<tr>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+</tr>
+<tr>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+</tr>
+<tr>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+</tr>
+</table>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+
+var rx=0;
+var ry=0;
+var perw=30;
+var perh=30;
+var cha='<img width='+perw+' height='+perh+' src="1.png"></img>';
+var blo='<img width='+perw+' height='+perh+' src="2.png"></img>';
+var row=23;
+var line=23;
+var block=new Array();
+
+
+	$(document).ready(function() {
+
+    	var r= '<table borderColor=#2459EB border=1>';
+    	for(var i=0;i<row;i++){
+    		r=r+'<tr>';
+    		for(var j=0;j<line;j++){
+    			var n=i*line+j;
+    			r=r+'<td style="background-color:#21C3D5;width:'+perw+'px;height:'+perh+'px"><div id="t_'+i+'_'+j+'" onclick="move(this.id);" style="width:'+perw+'px;height:'+perh+'px">'+''+'</div></td>';
+    		}
+    		r=r+'</tr>';
+    	}
+    	r=r+'</table>';
+    	$('#main').html(r);
+    	var startrow=Math.floor(row/2);
+    	var startline=Math.floor(line/2);
+    	$('#t_'+startrow+'_'+startline).html(cha);
+    	rx=startrow;
+    	ry=startline;
+    	
+    	for(var i=0;i<row;i++){
+    		block[i]=new Array();
+    		for(var j=0;j<line;j++){
+    			block[i][j]=0;
+    		}
+    	}
+	}
+);
+	
+	function getminexit(){
+		var t1=new Date().getTime();
+		var exit=getexit();
+		var min=99999;
+		var cm=0;
+		var minea=new Array();
+		for(var i=0;i<exit.length;i++){
+			var dist=caldis([rx,ry],exit[i]);
+			if(dist<min){
+				min=dist;
+				cm=0
+				minea=new Array();
+				minea[minea.length]=exit[i];
+			}else if(dist==min){
+				minea[minea.length]=exit[i];
+				cm++;
+			}
+		}
+		var t2=new Date().getTime();
+		return min-cm/100;
+	}
+	
+	function getexit(){
+		var exit=new Array();
+		for(var i=0;i<row;i++){
+			if(block[i][0]==0)
+				exit[exit.length]=[i,0];
+			if(block[i][line-1]==0)
+				exit[exit.length]=[i,line-1];
+		}
+		for(var j=1;j<line-1;j++){
+			if(block[0][j]==0)
+				exit[exit.length]=[0,j]
+			if(block[row-1][j]==0)
+				exit[exit.length]=[row-1,j]
+		}
+		return exit;
+	}
+	
+	var dis=new Array();
+	function caldis(a,b){
+		var queue=new Array()
+		queue[0]=a;
+		var score=0;
+		if(eqar(a,b))
+			return 0;
+		else{
+			while(queue.length>0){
+				var nq=new Array();
+				for(var i=0;i<queue.length;i++){
+					if(dis[sp(queue[i])]==undefined){
+						dis[sp(queue[i])]=score;
+						var t=getnear(queue[i]);
+						for(var j=0;j<t.length;j++){
+							if(dis[sp(t[j])]==undefined)
+								nq[nq.length]=t[j];
+						}
+					}
+				}
+				queue=nq;
+				score++;
+			}
+			if(dis[sp(b)]!=undefined)
+				return dis[sp(b)];
+			else
+				return 9999;
+		}
+			
+	}
+	function sp(a){
+		return a[0]+'_'+a[1];
+	}
+	
+	function eqar(a,b){
+		if(a[0]==b[0]&&a[1]==b[1])
+			return true;
+		else
+			return false;
+	}
+	
+	function getnear(p){
+		var x=p[0];
+		var y=p[1];
+		var r=new Array();
+		var xn=x-1;
+		var yn=y;
+		if(block[xn]!=undefined)
+			if(block[xn][yn]!=undefined&&block[xn][yn]!=1)
+				r[r.length]=[xn,yn];
+		xn = x+1;
+		yn = y;
+		if(block[xn]!=undefined)
+			if(block[xn][yn]!=undefined&&block[xn][yn]!=1)
+				r[r.length]=[xn,yn];
+		xn = x;
+		yn = y-1;
+		if(block[xn]!=undefined)
+			if(block[xn][yn]!=undefined&&block[xn][yn]!=1)
+				r[r.length]=[xn,yn];
+		xn = x;
+		yn = y+1;
+		if(block[xn]!=undefined)
+			if(block[xn][yn]!=undefined&&block[xn][yn]!=1)
+				r[r.length]=[xn,yn];
+		return r;
+		
+	}
+	
+
+	document.onkeydown=function(evt){
+		var isie = (document.all) ? true:false; 
+		var key; 
+		if(isie){ 
+		key = window.event.keyCode; 
+		}else{ 
+		key = evt.which; 
+		}
+		var x=rx;
+		var y=ry;
+		if(key==37){
+			y--;
+		}else if(key==38){
+			x--;
+		}else if(key==39){
+			y++;
+		}else if(key==40){
+			x++;
+		}else{
+			return;
+		}
+		var u='t_'+x+'_'+y;
+		move(u);
+	}
+	
+   
+   	function move(u){
+   		var n=u.split("_");
+   		var x=parseInt(n[1]);
+   		var y=parseInt(n[2]);
+   		if((Math.abs(x-rx)+Math.abs(y-ry))==1){
+   			if(block[x][y]==0){
+   				$('#'+u).html(cha);
+   	   			$('#t_'+rx+'_'+ry).html('');
+   	   			rx=x;
+   	   			ry=y;
+   	   			blockone();
+   	   			checkwin();
+   			}else{
+   				//alert('blocked');
+   			}
+   		}else{
+   			//alert('too far');
+   		}
+   	}
+   	
+   	function checkwin(){
+   		if(rx==0||rx==row-1||ry==0||ry==line-1){
+   			alert('win!');
+   		}
+   	}
+   	
+   	function blockone(){
+   		b=calbest2();
+   		dis=new Array();
+   		addx(b[0],b[1]);
+   	}
+   	
+   	function calbest2(){
+   		var t1=new Date().getTime();
+   		var max=0;
+   		var best=new Array();
+   		for(var i=0;i<row;i++){
+   			for(var j=0;j<line;j++){
+   				if(block[i][j]==0){
+   					block[i][j]=1;
+   					dis=new Array();
+   					var dist=getminexit();
+   					if(dist>max){
+   						max=dist;
+   						best=new Array();
+   						best[best.length]=[i,j];
+   					}else if(dist==max){
+   						best[best.length]=[i,j];
+   					}
+   					block[i][j]=0;
+   				}
+   			}
+   		}
+   		var r=Math.floor(Math.random()*best.length);
+   		var t2=new Date().getTime();
+   		console.log(t2-t1);
+   		return best[r];
+   	}
+   	
+   	
+   	function calbestblock(){
+   		var best=new Array();
+   		best[0]=0;
+   		best[1]=0;
+   		bestdis=9999;
+   		var possible = new Array();
+   		for(var i=0;i<row;i++){
+   			for(var j=0;j<line;j++){
+   				if(i==rx&&j==ry)
+   					continue;
+   				var cc=0;
+   				if(i==rx){
+   					if(j>ry){
+   						for(var k=j;k<line;k++){
+   							if(block[i][k]==0)
+   								cc++;
+   						}
+   					}else{
+   						for(var k=j;k>=0;k--){
+   							if(block[i][k]==0)
+   								cc++;
+   						}
+   					}
+   				}else if(j==ry){
+   					if(i>rx){
+   						for(var k=i;k<row;k++){
+   							if(block[k][j]==0)
+   								cc++;
+   						}
+   					}else{
+   						for(var k=i;k>=0;k--){
+   							if(block[k][j]==0)
+   								cc++;
+   						}
+   					}
+   				}else{
+   					if(i>rx){
+   						for(var k=i;k<row;k++){
+   							if(block[k][j]==0)
+   								cc++;
+   						}
+   					}else{
+   						for(var k=i;k>=0;k--){
+   							if(block[k][j]==0)
+   								cc++;
+   						}
+   					}
+   					if(j>ry){
+   						for(var k=j;k<line;k++){
+   							if(block[i][k]==0)
+   								cc++;
+   						}
+   					}else{
+   						for(var k=j;k>=0;k--){
+   							if(block[i][k]==0)
+   								cc++;
+   						}
+   					}
+   				}
+   				
+   				
+   				var type=0;
+   				if(Math.abs(i-rx)<Math.abs(j-ry))
+   					type=0;
+   				else if(Math.abs(i-rx)>Math.abs(j-ry))
+   					type=1;
+   				else
+   					type=Math.floor(Math.random()*2);
+   				var cx=0;
+   				var can=true;
+   				
+   				if(cc>3)
+   					can=false;
+
+   				if(can){
+   					if(block[i][j]==0&&(i!=rx||j!=ry)){
+   	   					var dist=Math.abs(i-rx)+Math.abs(j-ry);
+   	   					if(dist<bestdis){
+   	   						bestdis=dist;
+   	   						var tij=new Array();
+   	   						tij[0]=i;
+   	   						tij[1]=j;
+   	   						possible=new Array();
+   	   						possible[possible.length]=tij;
+   	   					}else if(dist==bestdis){
+   	   						bestdis=dist;
+   	   						var tij=new Array();
+   	   						tij[0]=i;
+   	   						tij[1]=j;
+   	   						possible[possible.length]=tij;
+   	   					}
+   	   				}
+   				}
+   			}
+   		}
+   		var r=Math.floor(Math.random()*possible.length);
+   		return possible[r];
+   	}
+   	
+   	function addx(x,y){
+   		block[x][y]=1;
+   		$('#t_'+x+'_'+y).html(blo);
+   	}
+</script>
+
+</body>

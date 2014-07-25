@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>escape flan</title>
+    
+<script type="text/javascript"  src="../javascripts/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+<div id="main">
+<table borderColor=#2459EB border=1>
+<tr>
+<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
+<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
+<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
+<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
+</tr>
+<tr>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+</tr>
+<tr>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+</tr>
+<tr>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+</tr>
+</table>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+
+var rx=0;
+var ry=0;
+var perw=30;
+var perh=30;
+var cha='<img width='+perw+' height='+perh+' src="1.png"></img>';
+var blo='<img width='+perw+' height='+perh+' src="2.png"></img>';
+var row=23;
+var line=23;
+var block=new Array();
+
+
+	$(document).ready(function() {
+
+    	var r= '<table borderColor=#2459EB border=1>';
+    	for(var i=0;i<row;i++){
+    		r=r+'<tr>';
+    		for(var j=0;j<line;j++){
+    			var n=i*line+j;
+    			r=r+'<td style="background-color:#21C3D5;width:'+perw+'px;height:'+perh+'px"><div id="t_'+i+'_'+j+'" onclick="move(this.id);" style="width:'+perw+'px;height:'+perh+'px">'+''+'</div></td>';
+    		}
+    		r=r+'</tr>';
+    	}
+    	r=r+'</table>';
+    	$('#main').html(r);
+    	var startrow=Math.floor(row/2);
+    	var startline=Math.floor(line/2);
+    	$('#t_'+startrow+'_'+startline).html(cha);
+    	rx=startrow;
+    	ry=startline;
+    	
+    	for(var i=0;i<row;i++){
+    		block[i]=new Array();
+    		for(var j=0;j<line;j++){
+    			block[i][j]=0;
+    		}
+    	}
+	}
+);
+	
+	function getminexit(p){
+		var x=p[0];
+		var y=p[1];
+		var t1=new Date().getTime();
+		var exit=getexit();
+		var min=99999;
+		var cm=0;
+		var minea=new Array();
+		for(var i=0;i<exit.length;i++){
+			var dist=caldis([x,y],exit[i]);
+			if(dist<min){
+				min=dist;
+				cm=0
+				minea=new Array();
+				minea[minea.length]=exit[i];
+			}else if(dist==min){
+				minea[minea.length]=exit[i];
+				cm++;
+			}
+		}
+		var t2=new Date().getTime();
+		return min;
+	}
+	
+	function getexit(){
+		var exit=new Array();
+		for(var i=0;i<row;i++){
+			if(block[i][0]==0)
+				exit[exit.length]=[i,0];
+			if(block[i][line-1]==0)
+				exit[exit.length]=[i,line-1];
+		}
+		for(var j=1;j<line-1;j++){
+			if(block[0][j]==0)
+				exit[exit.length]=[0,j]
+			if(block[row-1][j]==0)
+				exit[exit.length]=[row-1,j]
+		}
+		return exit;
+	}
+	
+	
+	function caldis(a,b){
+		var dis=new Array();
+		var queue=new Array()
+		queue[0]=a;
+		var score=0;
+		if(eqar(a,b))
+			return 0;
+		else{
+			while(queue.length>0){
+				var nq=new Array();
+				for(var i=0;i<queue.length;i++){
+					if(dis[sp(queue[i])]==undefined){
+						dis[sp(queue[i])]=score;
+						var t=getnear(queue[i]);
+						for(var j=0;j<t.length;j++){
+							if(dis[sp(t[j])]==undefined)
+								nq[nq.length]=t[j];
+						}
+					}
+				}
+				queue=nq;
+				score++;
+			}
+			if(dis[sp(b)]!=undefined)
+				return dis[sp(b)];
+			else
+				return 9999;
+		}
+			
+	}
+	function sp(a){
+		return a[0]+'_'+a[1];
+	}
+	
+	function eqar(a,b){
+		if(a[0]==b[0]&&a[1]==b[1])
+			return true;
+		else
+			return false;
+	}
+	
+	function getnear(p){
+		var x=p[0];
+		var y=p[1];
+		var r=new Array();
+		var xn=x-1;
+		var yn=y;
+		if(block[xn]!=undefined)
+			if(block[xn][yn]!=undefined&&block[xn][yn]!=1)
+				r[r.length]=[xn,yn];
+		xn = x+1;
+		yn = y;
+		if(block[xn]!=undefined)
+			if(block[xn][yn]!=undefined&&block[xn][yn]!=1)
+				r[r.length]=[xn,yn];
+		xn = x;
+		yn = y-1;
+		if(block[xn]!=undefined)
+			if(block[xn][yn]!=undefined&&block[xn][yn]!=1)
+				r[r.length]=[xn,yn];
+		xn = x;
+		yn = y+1;
+		if(block[xn]!=undefined)
+			if(block[xn][yn]!=undefined&&block[xn][yn]!=1)
+				r[r.length]=[xn,yn];
+		return r;
+		
+	}
+	
+
+// 	document.onkeydown=function(evt){
+// 		var isie = (document.all) ? true:false; 
+// 		var key; 
+// 		if(isie){ 
+// 		key = window.event.keyCode; 
+// 		}else{ 
+// 		key = evt.which; 
+// 		}
+// 		var x=rx;
+// 		var y=ry;
+// 		if(key==37){
+// 			y--;
+// 		}else if(key==38){
+// 			x--;
+// 		}else if(key==39){
+// 			y++;
+// 		}else if(key==40){
+// 			x++;
+// 		}else{
+// 			return;
+// 		}
+// 		var u='t_'+x+'_'+y;
+// 		move(u);
+// 	}
+	function calflan(){
+		var p=getnear([rx,ry]);
+		var min=99;
+		var best=new Array();
+		for(var i=0;i<p.length;i++){
+			var ex=getminexit(p[i]);
+			if(ex<min){
+				min=ex;
+				best = new Array();
+				best[best.length]=p[i];
+			}else if(ex==min){
+				best[best.length]=p[i];
+			}
+		}
+		var r=Math.floor(Math.random()*best.length);
+		return best[r];
+	}
+   
+   	function flanmove(u){
+   		var n=u.split("_");
+   		var x=parseInt(n[1]);
+   		var y=parseInt(n[2]);
+   		if((Math.abs(x-rx)+Math.abs(y-ry))==1){
+   			if(block[x][y]==0){
+   				$('#'+u).html(cha);
+   	   			$('#t_'+rx+'_'+ry).html('');
+   	   			rx=x;
+   	   			ry=y;
+   	   			checklose();
+   			}else{
+   				alert('blocked');
+   			}
+   		}else{
+   			alert('too far');
+   		}
+   	}
+	
+   	function flango(){
+   		var fl=calflan();
+   		if(fl==undefined){
+   			alert('win');
+   			return;
+   		}
+   		var flr='t_'+fl[0]+'_'+fl[1];
+   		flanmove(flr);
+   	}
+   	
+   	function move(u){
+   		var n=u.split("_");
+   		var x=parseInt(n[1]);
+   		var y=parseInt(n[2]);
+   		addx(x,y);
+   		flango();
+   		if(Math.random()<0.4)
+   			flango();
+   		
+   	}
+   	
+   	function checklose(){
+   		if(rx==0||rx==row-1||ry==0||ry==line-1){
+   			alert('lose!');
+   		}
+   	}
+   	
+   	function blockone(){
+   		b=calbest2();
+   		dis=new Array();
+   		addx(b[0],b[1]);
+   	}
+   	
+   	
+   	function addx(x,y){
+   		block[x][y]=1;
+   		$('#t_'+x+'_'+y).html(blo);
+   	}
+</script>
+
+</body>

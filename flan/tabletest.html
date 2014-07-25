@@ -117,7 +117,7 @@ var block=new Array();
    	   			rx=x;
    	   			ry=y;
    	   			blockone();
-   	   			if(Math.random()<0.7)
+   	   			if(Math.random()<0.4)
    	   				blockone();
    	   			checkwin();
    			}else{
@@ -216,15 +216,15 @@ var block=new Array();
    				if(can){
    					if(block[i][j]==0&&(i!=rx||j!=ry)){
    	   					var dis=Math.abs(i-rx)+Math.abs(j-ry);
-   	   					if(dis+cc<bestdis){
-   	   						bestdis=dis+cc;
+   	   					if(dis<bestdis){
+   	   						bestdis=dis;
    	   						var tij=new Array();
    	   						tij[0]=i;
    	   						tij[1]=j;
    	   						possible=new Array();
    	   						possible[possible.length]=tij;
-   	   					}else if(dis+cc==bestdis){
-   	   						bestdis=dis+cc;
+   	   					}else if(dis==bestdis){
+   	   						bestdis=dis;
    	   						var tij=new Array();
    	   						tij[0]=i;
    	   						tij[1]=j;

@@ -45,10 +45,12 @@
 
 var rx=0;
 var ry=0;
-var cha='<img width=50 height=50 src="1.png"></img>';
-var blo='<img width=50 height=50 src="2.png"></img>';
-var row=19;
-var line=19;
+var perw=30;
+var perh=30;
+var cha='<img width='+perw+' height='+perh+' src="1.png"></img>';
+var blo='<img width='+perw+' height='+perh+' src="2.png"></img>';
+var row=23;
+var line=23;
 var block=new Array();
 
 
@@ -59,17 +61,17 @@ var block=new Array();
     		r=r+'<tr>';
     		for(var j=0;j<line;j++){
     			var n=i*line+j;
-    			r=r+'<td style="background-color:#21C3D5;width:40px;height:30px"><div id="t_'+i+'_'+j+'" onclick="move(this.id);" style="width:50px;height:50px">'+''+'</div></td>';
+    			r=r+'<td style="background-color:#21C3D5;width:'+perw+'px;height:'+perh+'px"><div id="t_'+i+'_'+j+'" onclick="move(this.id);" style="width:'+perw+'px;height:'+perh+'px">'+''+'</div></td>';
     		}
     		r=r+'</tr>';
     	}
     	r=r+'</table>';
     	$('#main').html(r);
-    	var startrow=(row+1)/2;
-    	var startline=(line+1)/2;
+    	var startrow=Math.floor(row/2);
+    	var startline=Math.floor(line/2);
     	$('#t_'+startrow+'_'+startline).html(cha);
-    	rx=10;
-    	ry=10;
+    	rx=startrow;
+    	ry=startline;
     	
     	for(var i=0;i<row;i++){
     		block[i]=new Array();

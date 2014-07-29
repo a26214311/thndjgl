@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="../favicon.ico" />
-    <title>escape flan</title>
+    <title>FLAN SEIJA MAZE</title>
     
 <script type="text/javascript"  src="../javascripts/jquery-1.7.1.min.js"></script>
 <script src="javascripts/parse-1.2.19.min.js"></script>
@@ -42,6 +42,9 @@
 </tr>
 </table>
 </div>
+<div id="instruct" style="text-align:center"><font color="red" size=10><b>
+asdfawrfew
+</b></font></div>
 
 
 
@@ -53,8 +56,8 @@ var jskey = "OjNDfDKeMNoGTR4Pr4iyal6kW0Cgbj5yL4Tebj1v";
 
 
 
-var perw=30;
-var perh=30;
+var perw=24;
+var perh=24;
 var cha='<img width='+perw+' height='+perh+' src="1.png"></img>';
 var blo='<img width='+perw+' height='+perh+' src="2.png"></img>';
 var row=23;
@@ -64,7 +67,7 @@ var block=new Array();
 
 	$(document).ready(function() {
 		var rt='<table>';
-    	var r= '<table borderColor=#2459EB border=5>';
+    	var r= '<table borderColor=#2459EB border=3>';
     	for(var i=0;i<row;i++){
     		r=r+'<tr>';
     		for(var j=0;j<line;j++){
@@ -84,13 +87,13 @@ var block=new Array();
     		var color;
     		var size;
     		if(i==0){
-    			color='blue';
+    			color='EB5E2C';
     			size=5;
     		}else if(i<3){
     			color='green';
     			size=3;
     		}else{
-    			color='yellow';
+    			color='blue';
     			size=2;
     		}
     		ranklist=ranklist+'<tr><td><div style="text-align: center"><font color="'+color+'" size="'+size+'">'+name+'</font></div></td>';
@@ -100,15 +103,14 @@ var block=new Array();
     	ranklist=ranklist+'</table></div>';
     	rt=rt+'<tr><td>'+r+'</td><td style="width:256px;height:256px">'+arrow+'</td><td>'+ranklist+'</td></tr></table>';
     	$('#main').html(rt);
-    	
-
-    	
-    	for(var i=0;i<row;i++){
-    		block[i]=new Array();
-    		for(var j=0;j<line;j++){
-    			block[i][j]=0;
-    		}
-    	}
+    	init();
+	}
+);
+	var startts=0;
+	var goalts=1999999999999;
+	var step=0;
+	function init(){
+		clear();
     	start();
     	showcha();
     	while(!check()){
@@ -116,9 +118,8 @@ var block=new Array();
     		start();
     	}
     	getranklist();
+    	startts=new Date().getTime();
 	}
-);
-	
 	
 	function getranklist(){
 		Parse.initialize(appid, jskey);
@@ -128,6 +129,10 @@ var block=new Array();
 		query.find({
 			success:function(result){
 		    	var ranklist = '<div id="ranklist"><table  borderColor=red border=1>';
+	    		ranklist=ranklist+'<tr><td><div style="text-align: center"><font color="'+'purple'+'" size="'+5+'">'+'name'+'</font></div></td>';
+	    		ranklist=ranklist+'<td><div style="text-align: center"><font color="'+'purple'+'" size="'+5+'">'+'time'+'</font></div></td>';
+	    		ranklist=ranklist+'<td><div style="text-align: center"><font color="'+'purple'+'" size="'+5+'">'+'step'+'</font></div></td></tr>';
+
 		    	for(var i=0;i<10;i++){
 		    		if(result[i]==undefined) break;
 		    		var name=result[i].get("n");
@@ -136,13 +141,13 @@ var block=new Array();
 		    		var color;
 		    		var size;
 		    		if(i==0){
-		    			color='blue';
+		    			color='#EB5E2C';
 		    			size=5;
 		    		}else if(i<3){
 		    			color='green';
 		    			size=3;
 		    		}else{
-		    			color='yellow';
+		    			color='blue';
 		    			size=2;
 		    		}
 		    		ranklist=ranklist+'<tr><td><div style="text-align: center"><font color="'+color+'" size="'+size+'">'+name+'</font></div></td>';
@@ -322,8 +327,8 @@ var block=new Array();
 		}else{ 
 		key = evt.which; 
 		}
-		var x=flanp[1];
-		var y=flanp[0];
+		var x=flanp[0];
+		var y=flanp[1];
 		var k2;
 		if(key==37){
 			k2=1;
@@ -336,15 +341,15 @@ var block=new Array();
 		}else{
 			return;
 		}
-		var newkey=key+gravity;
+		var newkey=key-gravity;
 		if(newkey%4==0){
-			y--;
-		}else if(newkey%4==1){
-			x--;
-		}else if(newkey%4==2){
-			y++;
-		}else if(newkey%4==3){
 			x++;
+		}else if(newkey%4==1){
+			y--;
+		}else if(newkey%4==2){
+			x--;
+		}else if(newkey%4==3){
+			y++;
 		}else{
 			return;
 		}
@@ -392,10 +397,15 @@ var block=new Array();
    	
    	function move(u){
    		flanmove(u);
+   		step++;
    		showcha();
    		if(Math.random()<0.4){
    			changegravity();
    		}
+   	}
+   	
+   	function seijamove(){
+   		
    	}
    	
    	function checkwin(){
@@ -404,7 +414,12 @@ var block=new Array();
    		var sx=seijap[0];
    		var sy=seijap[1];
    		if((Math.abs(fx-sx)+Math.abs(fy-sy))==1){
-   			alert('win');
+   			goalts=new Date().getTime();
+   			var time = (goalts-startts)/1000;
+   			var count=step;
+   			var ret='恭喜你用了'+time+'秒，'+count+'步抓到了鬼人正邪\n请留下您的大名:'
+   			var name=prompt(ret,"Anonymous");
+   			saverank(name,time,count);
    		}else{
    			
    		}
@@ -436,11 +451,12 @@ var block=new Array();
    	
    	
    	
-   	function saverank(name,time,step){
-   		var obj=new Parse.Object.extend("Score");
+   	function saverank(name,time,count){
+   		var Score=Parse.Object.extend("Score");
+   		var obj = new Score();
    		obj.set("n",name);
    		obj.set("t",time);
-   		obj.set("s",step);
+   		obj.set("s",count);
    		obj.save();
    	}
    	

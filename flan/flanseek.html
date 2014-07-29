@@ -71,6 +71,7 @@ var block=new Array();
     	for(var i=0;i<row;i++){
     		r=r+'<tr>';
     		for(var j=0;j<line;j++){
+    			block[i]=new Array();
     			var n=i*line+j;
     			r=r+'<td style="background-color:#21C3D5;width:'+perw+'px;height:'+perh+'px"><div id="t_'+i+'_'+j+'" onclick="move(this.id);" style="width:'+perw+'px;height:'+perh+'px">'+''+'</div></td>';
     		}

@@ -187,7 +187,7 @@ var block=new Array();
 		for(var i=0;i<200;i++){
 			var r1=Math.floor(row*Math.random());
 	    	var l1=Math.floor(line*Math.random());
-	    	addx(r1,l1);
+	    	addx(r1,l1);13845436
 		}
 	}
 	
@@ -397,10 +397,19 @@ var block=new Array();
    		if(Math.random()<0.4){
    			changegravity();
    		}
+   		seijamove();
    	}
    	
    	function seijamove(){
-   		
+   		var near=getnear(seijap);
+   		var len=near.length;
+   		var ran=Math.floor(5*Math.random());
+   		if(ran<len){
+   			var newseija = near[ran];
+   			$('#t_'+seijap[0]+'_'+seijap[1]).html('');
+   			seijap=newseija;
+   			$('#t_'+seijap[0]+'_'+seijap[1]).html(seijai);
+   		}
    	}
    	
    	function checkwin(){
@@ -412,8 +421,8 @@ var block=new Array();
    			goalts=new Date().getTime();
    			var time = (goalts-startts)/1000;
    			var count=step;
-   			var ret='恭喜小叶子用了'+time+'秒，'+count+'步抓到了时空哦\n请留下您的大名:'
-   			var name=prompt(ret,"Anonymous");
+   			var ret='恭喜小叶子用了'+time+'秒，'+count+'步和时空抱在了一起\n请留下您的大名:'
+   			var name=prompt(ret,"小叶子");
    			saverank(name,time,count);
    			var query=new Parse.Query("Score");
    			query.lessThan("t",time);

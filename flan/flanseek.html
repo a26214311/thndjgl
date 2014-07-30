@@ -3,47 +3,25 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="../favicon.ico" />
-    <title>FLAN SEIJA MAZE</title>
+    <title>SEIJA MAZE</title>
     
 <script type="text/javascript"  src="../javascripts/jquery-1.7.1.min.js"></script>
 <script src="javascripts/parse-1.2.19.min.js"></script>
 
 <style>
-    body { font-family: Helvetica, Arial, sans-serif;background-color:black }
+body { font-family: Helvetica, Arial, sans-serif;
+    		background: url('img/star.jpg') no-repeat center fixed;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+}
 </style>
 
 </head>
 <body>
 <div id="main">
-<table borderColor=#2459EB border=1>
-<tr>
-<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
-<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
-<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
-<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
-</tr>
-<tr>
-<td style="background-color:green;width:50px;height:50px"></td>
-<td style="background-color:green;width:50px;height:50px"></td>
-<td style="background-color:green;width:50px;height:50px"></td>
-<td style="background-color:green;width:50px;height:50px"></td>
-</tr>
-<tr>
-<td style="background-color:green;width:50px;height:50px"></td>
-<td style="background-color:green;width:50px;height:50px"></td>
-<td style="background-color:green;width:50px;height:50px"></td>
-<td style="background-color:green;width:50px;height:50px"></td>
-</tr>
-<tr>
-<td style="background-color:green;width:50px;height:50px"></td>
-<td style="background-color:green;width:50px;height:50px"></td>
-<td style="background-color:green;width:50px;height:50px"></td>
-<td style="background-color:green;width:50px;height:50px"></td>
-</tr>
-</table>
 </div>
 <div id="instruct" style="text-align:center"><font color="red" size=9><b>
-asdfawrfew
+
 </b></font></div>
 
 
@@ -78,7 +56,7 @@ var block=new Array();
     		r=r+'</tr>';
     	}
     	r=r+'</table>';
-    	var arrow = '<div style="text-align:center"><font size=40 color="#636F29"><strong>level</strong></font></div>';
+    	var arrow = '<div style="text-align:center"><font size=40 color="#DCC5C5"><strong><b>重力方向</b></strong></font></div>';
     	arrow = arrow + '<div id="arrow"><img width=256 height=256 src="img/down.png"></img></div>';
     	var ranklist = '<div id="ranklist"><table  borderColor=red border=1>';
     	for(var i=0;i<10;i++){
@@ -176,8 +154,8 @@ var block=new Array();
 	
 	var flanp=[row-1,0];
 	var seijap=[0,line-1];
-	var flani='<img width='+perw+' height='+perh+' src="1.png"></img>';
-	var seijai='<img width='+perw+' height='+perh+' src="3.png"></img>';
+	var flani='<img width='+perw+' height='+perh+' src="img/ye.png"></img>';
+	var seijai='<img width='+perw+' height='+perh+' src="img/9.png"></img>';
 	
 	function showcha(from){
 		if(block[flanp[0]][flanp[1]]==0&&block[seijap[0]][seijap[1]]==0){

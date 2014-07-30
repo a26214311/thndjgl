@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="../favicon.ico" />
-    <title>小叶子和时空的捉迷藏</title>
+    <title>芙兰朵露和鬼人正邪的捉迷藏</title>
     
 <script type="text/javascript"  src="../javascripts/jquery-1.7.1.min.js"></script>
 <script src="javascripts/parse-1.2.19.min.js"></script>
@@ -22,7 +22,7 @@ body { font-family: Helvetica, Arial, sans-serif;
 <div id="main">
 </div>
 <div id="instruct" style="text-align:center width:600px" ><font color="red" size=5><b>
-时空和小叶子在奇怪的空间走散了，按上下左右键控制小叶子和时空走到一起！<br>可是鬼人正邪用奇怪的力量在不断改变重力的方向，不过才不怕呢！
+芙兰朵露和鬼人正邪正在玩捉迷藏游戏，按上下左右键控制芙兰抓到正邪吧<br>注意鬼人正邪用奇怪的力量在不断改变重力的方向！
 </b></font></div>
 
 
@@ -166,8 +166,8 @@ var right2='<img width=64 height=64 src="img/right2.png" onclick="keymove(39);">
 	
 	var flanp=[row-1,0];
 	var seijap=[0,line-1];
-	var flani='<img width='+perw+' height='+perh+' src="img/ye.png"></img>';
-	var seijai='<img width='+perw+' height='+perh+' src="img/9.png"></img>';
+	var flani='<img width='+perw+' height='+perh+' src="img/flan.png"></img>';
+	var seijai='<img width='+perw+' height='+perh+' src="img/seija.png"></img>';
 	
 	function showcha(from){
 		if(block[flanp[0]][flanp[1]]==0&&block[seijap[0]][seijap[1]]==0){
@@ -437,8 +437,8 @@ var right2='<img width=64 height=64 src="img/right2.png" onclick="keymove(39);">
    			goalts=new Date().getTime();
    			var time = (goalts-startts)/1000;
    			var count=step;
-   			var ret='恭喜小叶子用了'+time+'秒，'+count+'步和时空抱在了一起\n请留下您的大名:'
-   			var name=prompt(ret,"小叶子");
+   			var ret='恭喜您用了'+time+'秒，'+count+'步和抓到了鬼人正邪\n请留下您的大名:'
+   			var name=prompt(ret,"Anonmous");
    			saverank(name,time,count);
    			var query=new Parse.Query("Score");
    			query.lessThan("t",time);

@@ -81,7 +81,7 @@ var block=new Array();
     		ranklist=ranklist+'<td><div style="text-align: center"><font color="'+color+'" size="'+size+'">'+step+'</font></div></td></tr>';
     	}
     	ranklist=ranklist+'</table></div>';
-    	rt=rt+'<tr><td>'+r+'</td><td style="width:256px;height:256px">'+arrow+'</td><td>'+ranklist+'</td></tr></table>';
+    	rt=rt+'<tr><td>'+arrow+'</td><td style="width:256px;height:256px">'+r+'</td><td>'+ranklist+'</td></tr></table>';
     	$('#main').html(rt);
     	init();
 	}
@@ -403,12 +403,12 @@ var block=new Array();
    	function seijamove(){
    		var near=getnear(seijap);
    		var len=near.length;
-   		var ran=Math.floor(5*Math.random());
+   		var ran=Math.floor(4*Math.random());
    		if(ran<len){
    			var newseija = near[ran];
    			$('#t_'+seijap[0]+'_'+seijap[1]).html('');
    			seijap=newseija;
-   			$('#t_'+seijap[0]+'_'+seijap[1]).html(seijai);
+   			showcha();
    		}
    	}
    	
@@ -472,6 +472,10 @@ var block=new Array();
    		obj.set("n",name);
    		obj.set("t",time);
    		obj.set("s",count);
+   		var acl= new Parse.ACL();
+   		acl.setPublicReadAccess(true);
+   		acl.setPublicWriteAccess(false);
+   		obj.set("ACL",acl);
    		obj.save();
    	}
    	

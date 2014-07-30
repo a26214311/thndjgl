@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>SEIJA MAZE</title>
+    
+<script type="text/javascript"  src="../javascripts/jquery-1.7.1.min.js"></script>
+<script src="javascripts/parse-1.2.19.min.js"></script>
+
+<style>
+body { font-family: Helvetica, Arial, sans-serif;
+    		//background: url('img/star.jpg') no-repeat center fixed;
+    		background-color:black;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+}
+</style>
+
+</head>
+<body>
+<div id="main">
+</div>
+<div id="instruct" style="text-align:center"><font color="red" size=9><b>
+
+</b></font></div>
+
+
+
+
+<script type="text/javascript">
+
+var appid = "rekujmyginVtn9rVcPcOR3zxmFpo7MTigNd3t90y";
+var jskey = "OjNDfDKeMNoGTR4Pr4iyal6kW0Cgbj5yL4Tebj1v";
+
+
+
+var perw=24;
+var perh=24;
+var cha='<img width='+perw+' height='+perh+' src="1.png"></img>';
+var blo='<img width='+perw+' height='+perh+' src="2.png"></img>';
+var row=23;
+var line=23;
+var block=new Array();
+
+
+	$(document).ready(function() {
+		var rt='<table>';
+    	var r= '<table borderColor=#2459EB border=3>';
+    	for(var i=0;i<row;i++){
+    		r=r+'<tr>';
+    		for(var j=0;j<line;j++){
+    			block[i]=new Array();
+    			var n=i*line+j;
+    			r=r+'<td style="background-color:#21C3D5;width:'+perw+'px;height:'+perh+'px"><div id="t_'+i+'_'+j+'" onclick="move(this.id);" style="width:'+perw+'px;height:'+perh+'px">'+''+'</div></td>';
+    		}
+    		r=r+'</tr>';
+    	}
+    	r=r+'</table>';
+    	var arrow = '<div style="text-align:center"><font size=40 color="#DCC5C5"><strong><b>重力方向</b></strong></font></div>';
+    	arrow = arrow + '<div id="arrow"><img width=256 height=256 src="img/down.png"></img></div>';
+    	var ranklist = '<div id="ranklist"><table  borderColor=red border=1>';
+    	for(var i=0;i<10;i++){
+    		var name='loading';
+    		var time='loading';
+    		var step='loading';
+    		var color;
+    		var size;
+    		if(i==0){
+    			color='EB5E2C';
+    			size=5;
+    		}else if(i<3){
+    			color='green';
+    			size=3;
+    		}else{
+    			color='blue';
+    			size=2;
+    		}
+    		ranklist=ranklist+'<tr><td><div style="text-align: center"><font color="'+color+'" size="'+size+'">'+name+'</font></div></td>';
+    		ranklist=ranklist+'<td><div style="text-align: center"><font color="'+color+'" size="'+size+'">'+time+'</font></div></td>';
+    		ranklist=ranklist+'<td><div style="text-align: center"><font color="'+color+'" size="'+size+'">'+step+'</font></div></td></tr>';
+    	}
+    	ranklist=ranklist+'</table></div>';
+    	rt=rt+'<tr><td>'+r+'</td><td style="width:256px;height:256px">'+arrow+'</td><td>'+ranklist+'</td></tr></table>';
+    	$('#main').html(rt);
+    	init();
+	}
+);
+	var startts=0;
+	var goalts=1999999999999;
+	var step=0;
+	function init(){
+		clear();
+    	start();
+    	showcha();
+    	while(!check()){
+    		clear();
+    		start();
+    	}
+    	getranklist();
+    	startts=new Date().getTime();
+    	getall();
+	}
+	
+	
+	var allplayer=1;
+	function getall(){
+		var query=new Parse.Query("Score");
+		query.count({
+			success:function(result){
+				allplayer=result;
+			}
+		})
+	}
+	
+	var num=['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
+	function getranklist(){
+		Parse.initialize(appid, jskey);
+		var query=new Parse.Query("Score");
+		query.addAscending("t");
+		query.limit(10);
+		query.find({
+			success:function(result){
+		    	var ranklist = '<div id="ranklist"><table  borderColor=red border=1>';
+	    		ranklist=ranklist+'<tr><td><div style="text-align: center"><font color="'+'purple'+'" size="'+5+'">'+'名次'+'</font></div></td>';
+	    		ranklist=ranklist+'<td><div style="text-align: center"><font color="'+'purple'+'" size="'+5+'">'+'name'+'</font></div></td>';
+	    		ranklist=ranklist+'<td><div style="text-align: center"><font color="'+'purple'+'" size="'+5+'">'+'time'+'</font></div></td>';
+	    		ranklist=ranklist+'<td><div style="text-align: center"><font color="'+'purple'+'" size="'+5+'">'+'step'+'</font></div></td></tr>';
+				
+		    	for(var i=0;i<10;i++){
+		    		if(result[i]==undefined) break;
+		    		var name=result[i].get("n");
+		    		var time=result[i].get("t");
+		    		var step=result[i].get("s");
+		    		var color;
+		    		var size;
+		    		if(i==0){
+		    			color='#EB5E2C';
+		    			size=6;
+		    		}else if(i<3){
+		    			color='green';
+		    			size=5;
+		    		}else{
+		    			color='white';
+		    			size=3;
+		    		}
+		    		ranklist=ranklist+'<tr><td><div style="text-align: center"><font color="'+color+'" size="'+size+'">'+num[i]+'</font></div></td>';
+		    		ranklist=ranklist+'<td><div style="text-align: center"><font color="'+color+'" size="'+size+'">'+name+'</font></div></td>';
+		    		ranklist=ranklist+'<td><div style="text-align: center"><font color="'+color+'" size="'+size+'">'+time+'</font></div></td>';
+		    		ranklist=ranklist+'<td><div style="text-align: center"><font color="'+color+'" size="'+size+'">'+step+'</font></div></td></tr>';
+		    	}
+		    	ranklist=ranklist+'</table></div>';
+		    	$('#ranklist').html(ranklist);
+			}
+		});
+	}
+	
+	var flanp=[row-1,0];
+	var seijap=[0,line-1];
+	var flani='<img width='+perw+' height='+perh+' src="img/ye.png"></img>';
+	var seijai='<img width='+perw+' height='+perh+' src="img/9.png"></img>';
+	
+	function showcha(from){
+		if(block[flanp[0]][flanp[1]]==0&&block[seijap[0]][seijap[1]]==0){
+			$('#t_'+flanp[0]+'_'+flanp[1]).html(flani);
+			$('#t_'+seijap[0]+'_'+seijap[1]).html(seijai);
+		}else{
+			alert('error');
+		}
+	}
+	function clearcha(from){
+		$('#t_'+from[0]+'_'+from[1]).html('');
+	}
+	function clear(){
+		flanp=[row-1,0];
+		seijap=[0,line-1];
+		for(var i=0;i<row;i++){
+			for(var j=0;j<line;j++){
+				block[i][j]=0;
+				$('#t_'+i+'_'+j).html('');
+			}
+		}
+		showcha();
+	}
+	
+	function start(){
+		for(var i=0;i<200;i++){
+			var r1=Math.floor(row*Math.random());
+	    	var l1=Math.floor(line*Math.random());
+	    	addx(r1,l1);
+		}
+	}
+	
+	function check(){
+		if(caldis(flanp,seijap)==9999){
+			return false;
+		}else{
+			return true;
+		}
+			
+	}
+	
+	
+	function getminexit(p){
+		var x=p[0];
+		var y=p[1];
+		var t1=new Date().getTime();
+		var exit=getexit();
+		var min=99999;
+		var cm=0;
+		var minea=new Array();
+		for(var i=0;i<exit.length;i++){
+			var dist=caldis([x,y],exit[i]);
+			if(dist<min){
+				min=dist;
+				cm=0
+				minea=new Array();
+				minea[minea.length]=exit[i];
+			}else if(dist==min){
+				minea[minea.length]=exit[i];
+				cm++;
+			}
+		}
+		var t2=new Date().getTime();
+		return min;
+	}
+	
+	function getexit(){
+		var exit=new Array();
+		for(var i=0;i<row;i++){
+			if(block[i][0]==0)
+				exit[exit.length]=[i,0];
+			if(block[i][line-1]==0)
+				exit[exit.length]=[i,line-1];
+		}
+		for(var j=1;j<line-1;j++){
+			if(block[0][j]==0)
+				exit[exit.length]=[0,j]
+			if(block[row-1][j]==0)
+				exit[exit.length]=[row-1,j]
+		}
+		return exit;
+	}
+	
+	
+	function caldis(a,b){
+		var dis=new Array();
+		var queue=new Array()
+		queue[0]=a;
+		var score=0;
+		if(eqar(a,b))
+			return 0;
+		else{
+			while(queue.length>0){
+				var nq=new Array();
+				for(var i=0;i<queue.length;i++){
+					if(dis[sp(queue[i])]==undefined){
+						dis[sp(queue[i])]=score;
+						var t=getnear(queue[i]);
+						for(var j=0;j<t.length;j++){
+							if(dis[sp(t[j])]==undefined)
+								nq[nq.length]=t[j];
+						}
+					}
+				}
+				queue=nq;
+				score++;
+			}
+			if(dis[sp(b)]!=undefined)
+				return dis[sp(b)];
+			else
+				return 9999;
+		}
+			
+	}
+	function sp(a){
+		return a[0]+'_'+a[1];
+	}
+	
+	function eqar(a,b){
+		if(a[0]==b[0]&&a[1]==b[1])
+			return true;
+		else
+			return false;
+	}
+	
+	function getnear(p){
+		var x=p[0];
+		var y=p[1];
+		var r=new Array();
+		var xn=x-1;
+		var yn=y;
+		if(block[xn]!=undefined)
+			if(block[xn][yn]!=undefined&&block[xn][yn]!=1)
+				r[r.length]=[xn,yn];
+		xn = x+1;
+		yn = y;
+		if(block[xn]!=undefined)
+			if(block[xn][yn]!=undefined&&block[xn][yn]!=1)
+				r[r.length]=[xn,yn];
+		xn = x;
+		yn = y-1;
+		if(block[xn]!=undefined)
+			if(block[xn][yn]!=undefined&&block[xn][yn]!=1)
+				r[r.length]=[xn,yn];
+		xn = x;
+		yn = y+1;
+		if(block[xn]!=undefined)
+			if(block[xn][yn]!=undefined&&block[xn][yn]!=1)
+				r[r.length]=[xn,yn];
+		return r;
+		
+	}
+	
+	var gravity=0;
+	
+	document.onkeydown=function(evt){
+		var isie = (document.all) ? true:false; 
+		var key; 
+		if(isie){ 
+		key = window.event.keyCode; 
+		}else{ 
+		key = evt.which; 
+		}
+		var x=flanp[0];
+		var y=flanp[1];
+		var k2;
+		if(key==37){
+			k2=1;
+		}else if(key==38){
+			k2=2;
+		}else if(key==39){
+			k2=3;
+		}else if(key==40){
+			k2=0;
+		}else{
+			return;
+		}
+		var newkey=key-gravity;
+		if(newkey%4==0){
+			x++;
+		}else if(newkey%4==1){
+			y--;
+		}else if(newkey%4==2){
+			x--;
+		}else if(newkey%4==3){
+			y++;
+		}else{
+			return;
+		}
+		var u='t_'+x+'_'+y;
+		move(u);
+	}
+
+	
+	function changegravity(){
+		gravity=Math.floor(4*Math.random());
+		if(gravity==0){
+			$('#arrow').html('<img width=256 height=256 src="img/down.png"></img>');
+		}else if(gravity==1){
+			$('#arrow').html('<img width=256 height=256 src="img/left.png"></img>');
+		}else if(gravity==2){
+			$('#arrow').html('<img width=256 height=256 src="img/up.png"></img>');
+		}else if(gravity==3){
+			$('#arrow').html('<img width=256 height=256 src="img/right.png"></img>');
+		}else{
+			alert('error');
+		}
+		
+	}
+   
+   	function flanmove(u){
+   		var n=u.split("_");
+   		var x=parseInt(n[1]);
+   		var y=parseInt(n[2]);
+   		var fx=flanp[0];
+   		var fy=flanp[1];
+   		if((Math.abs(x-fx)+Math.abs(y-fy))==1){
+   			if(block[x][y]==0){
+   				clearcha(flanp);
+   				flanp=[x,y];
+   	   			checkwin();
+   			}else{
+   				//alert('blocked');
+   			}
+   		}else{
+   			//alert('too far');
+   		}
+   	}
+	
+   	
+   	
+   	function move(u){
+   		flanmove(u);
+   		step++;
+   		showcha();
+   		if(Math.random()<0.4){
+   			changegravity();
+   		}
+   	}
+   	
+   	function seijamove(){
+   		
+   	}
+   	
+   	function checkwin(){
+   		var fx=flanp[0];
+   		var fy=flanp[1];
+   		var sx=seijap[0];
+   		var sy=seijap[1];
+   		if((Math.abs(fx-sx)+Math.abs(fy-sy))==1){
+   			goalts=new Date().getTime();
+   			var time = (goalts-startts)/1000;
+   			var count=step;
+   			var ret='恭喜小叶子用了'+time+'秒，'+count+'步抓到了时空哦\n请留下您的大名:'
+   			var name=prompt(ret,"Anonymous");
+   			saverank(name,time,count);
+   			var query=new Parse.Query("Score");
+   			query.lessThan("t",time);
+   			query.count({
+   				success:function(result){
+   					var les=(''+(100*(allplayer-result)/allplayer)).substring(0,5) +'%'
+   					var r2='您的排名为：'+(result+1)+'，打败了'+les+'的玩家';
+   					alert(r2);
+   					init();
+   				}
+   			})
+   			
+   		}else{
+   			
+   		}
+   	}
+   	
+   	
+
+   	
+   	
+   	function addx(x,y){
+   			var forbidpoints=[flanp,seijap];
+			if(block[x][y]==0){
+				var canadd=true;
+				for(var i=0;i<forbidpoints.length;i++){
+					if(x==forbidpoints[i][0]&&y==forbidpoints[i][1]){
+						canadd=false;
+					}
+				}
+				if(canadd){
+					block[x][y]=1;
+					$('#t_'+x+'_'+y).html(blo);
+				}
+			}else{
+				
+			}
+   		
+   	}
+   	
+   	
+   	
+   	
+   	function saverank(name,time,count){
+   		var Score=Parse.Object.extend("Score");
+   		var obj = new Score();
+   		obj.set("n",name);
+   		obj.set("t",time);
+   		obj.set("s",count);
+   		obj.save();
+   	}
+   	
+   	
+</script>
+
+<script type="text/javascript">
+	
+</script>
+
+
+</body>

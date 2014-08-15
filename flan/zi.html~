@@ -1,0 +1,249 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <title>tabletest</title>
+    
+<script type="text/javascript"  src="../javascripts/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+<div id="main">
+<table borderColor=#2459EB border=1>
+<tr>
+<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
+<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
+<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
+<td style="background-color:green;width:50px;height:50px"><div id="t1" style="text-align: center;overflow:hidden;"></div></td>
+</tr>
+<tr>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+</tr>
+<tr>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+</tr>
+<tr>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+<td style="background-color:green;width:50px;height:50px"></td>
+</tr>
+</table>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+
+var rx=0;
+var ry=0;
+var perw=30;
+var perh=30;
+var cha='<img width='+perw+' height='+perh+' src="1.png"></img>';
+var blo='<img width='+perw+' height='+perh+' src="2.png"></img>';
+var row=23;
+var line=23;
+var block=new Array();
+
+
+	$(document).ready(function() {
+
+    	var r= '<table borderColor=#2459EB border=1>';
+    	for(var i=0;i<row;i++){
+    		r=r+'<tr>';
+    		for(var j=0;j<line;j++){
+    			var n=i*line+j;
+    			r=r+'<td style="background-color:#21C3D5;width:'+perw+'px;height:'+perh+'px"><div id="t_'+i+'_'+j+'" onclick="move(this.id);" style="width:'+perw+'px;height:'+perh+'px">'+''+'</div></td>';
+    		}
+    		r=r+'</tr>';
+    	}
+    	r=r+'</table>';
+    	$('#main').html(r);
+    	var startrow=Math.floor(row/2);
+    	var startline=Math.floor(line/2);
+    	$('#t_'+startrow+'_'+startline).html(cha);
+    	rx=startrow;
+    	ry=startline;
+    	
+    	for(var i=0;i<row;i++){
+    		block[i]=new Array();
+    		for(var j=0;j<line;j++){
+    			block[i][j]=0;
+    		}
+    	}
+	}
+);
+
+	document.onkeydown=function(evt){
+		var isie = (document.all) ? true:false; 
+		var key; 
+		if(isie){ 
+		key = window.event.keyCode; 
+		}else{ 
+		key = evt.which; 
+		}
+		var x=rx;
+		var y=ry;
+		if(key==37){
+			y--;
+		}else if(key==38){
+			x--;
+		}else if(key==39){
+			y++;
+		}else if(key==40){
+			x++;
+		}else{
+			return;
+		}
+		var u='t_'+x+'_'+y;
+		move(u);
+	}
+	
+   
+   	function move(u){
+   		var n=u.split("_");
+   		var x=parseInt(n[1]);
+   		var y=parseInt(n[2]);
+   		if((Math.abs(x-rx)+Math.abs(y-ry))==1){
+   			if(block[x][y]==0){
+   				$('#'+u).html(cha);
+   	   			$('#t_'+rx+'_'+ry).html('');
+   	   			rx=x;
+   	   			ry=y;
+   	   			blockone();
+   	   			if(Math.random()<0.4)
+   	   				blockone();
+   	   			checkwin();
+   			}else{
+   				//alert('blocked');
+   			}
+   		}else{
+   			//alert('too far');
+   		}
+   	}
+   	
+   	function checkwin(){
+   		if(rx==0||rx==row-1||ry==0||ry==line-1){
+   			alert('win!');
+   		}
+   	}
+   	
+   	function blockone(){
+   		var b=calbestblock();
+   		addx(b[0],b[1]);
+   	}
+   	
+   	function calbestblock(){
+   		var best=new Array();
+   		best[0]=0;
+   		best[1]=0;
+   		bestdis=9999;
+   		var possible = new Array();
+   		for(var i=0;i<row;i++){
+   			for(var j=0;j<line;j++){
+   				if(i==rx&&j==ry)
+   					continue;
+   				var cc=0;
+   				if(i==rx){
+   					if(j>ry){
+   						for(var k=j;k<line;k++){
+   							if(block[i][k]==0)
+   								cc++;
+   						}
+   					}else{
+   						for(var k=j;k>=0;k--){
+   							if(block[i][k]==0)
+   								cc++;
+   						}
+   					}
+   				}else if(j==ry){
+   					if(i>rx){
+   						for(var k=i;k<row;k++){
+   							if(block[k][j]==0)
+   								cc++;
+   						}
+   					}else{
+   						for(var k=i;k>=0;k--){
+   							if(block[k][j]==0)
+   								cc++;
+   						}
+   					}
+   				}else{
+   					if(i>rx){
+   						for(var k=i;k<row;k++){
+   							if(block[k][j]==0)
+   								cc++;
+   						}
+   					}else{
+   						for(var k=i;k>=0;k--){
+   							if(block[k][j]==0)
+   								cc++;
+   						}
+   					}
+   					if(j>ry){
+   						for(var k=j;k<line;k++){
+   							if(block[i][k]==0)
+   								cc++;
+   						}
+   					}else{
+   						for(var k=j;k>=0;k--){
+   							if(block[i][k]==0)
+   								cc++;
+   						}
+   					}
+   				}
+   				
+   				
+   				var type=0;
+   				if(Math.abs(i-rx)<Math.abs(j-ry))
+   					type=0;
+   				else if(Math.abs(i-rx)>Math.abs(j-ry))
+   					type=1;
+   				else
+   					type=Math.floor(Math.random()*2);
+   				var cx=0;
+   				var can=true;
+   				
+   				if(cc>3)
+   					can=false;
+
+   				if(can){
+   					if(block[i][j]==0&&(i!=rx||j!=ry)){
+   	   					var dis=Math.abs(i-rx)+Math.abs(j-ry);
+   	   					if(dis<bestdis){
+   	   						bestdis=dis;
+   	   						var tij=new Array();
+   	   						tij[0]=i;
+   	   						tij[1]=j;
+   	   						possible=new Array();
+   	   						possible[possible.length]=tij;
+   	   					}else if(dis==bestdis){
+   	   						bestdis=dis;
+   	   						var tij=new Array();
+   	   						tij[0]=i;
+   	   						tij[1]=j;
+   	   						possible[possible.length]=tij;
+   	   					}
+   	   				}
+   				}
+   			}
+   		}
+   		var r=Math.floor(Math.random()*possible.length);
+   		return possible[r];
+   	}
+   	
+   	function addx(x,y){
+   		block[x][y]=1;
+   		$('#t_'+x+'_'+y).html(blo);
+   	}
+</script>
+
+</body>

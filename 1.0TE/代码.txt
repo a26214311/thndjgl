@@ -1,0 +1,14 @@
+heal_enemy;		封印 驱散 失明 睡眠
+buff_enemy;		打断 强晕 双防降
+damage_enemy;		幻想乡之怒，199hits不受封印加成
+debuff_enemy;		全属性降（双攻 双防 速度 灵巧）黑暗 致伤
+heal_partner;		解除昏迷状态，全体力灵力恢复满
+buff_partner;		全属性增（双防 双攻 速度 灵巧）双恢复 净化 集中 急速 活力
+damage_partner;		己方全体无敌一回合
+debuff_partner;		己方全体速降
+
+另外：多个代码可以同时运行，但同一条代码不可一次运行多个（buff不可叠加）
+
+
+heal_enemy;buff_enemy;buff_partner;damage_enemy;damage_partner;debuff_enemy;heal_partner;
+平时自己直接复制黏贴这段
